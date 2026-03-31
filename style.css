@@ -1,0 +1,174 @@
+:root {
+  --finland-blue: #002F6C;
+  --finland-white: #ffffff;
+  --ink: #0f172a;
+  --muted: #475569;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--ink);
+}
+
+html[data-theme="winter"] body {
+  background: var(--finland-white);
+}
+
+html[data-theme="dst"] body {
+  background: #eaf2ff;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.hero {
+  min-height: auto;
+  display: block;
+  padding-top: 7rem;
+  padding-bottom: 4rem;
+}
+
+.hero-card {
+  border: 0;
+  border-radius: 1.5rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.08);
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.section-title {
+  margin-bottom: 1rem;
+}
+
+.graphic-box {
+  border-radius: 1rem;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 53, 128, 0.08);
+  border: 1px solid rgba(0, 53, 128, 0.15);
+}
+
+.graphic-box svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.map-caption {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 1000;
+  max-width: 22rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.12);
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.map-legend {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  z-index: 1000;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.12);
+  color: var(--ink);
+  font-size: 10pt;
+  min-width: 5rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  line-height: 1.4;
+}
+
+.legend-swatch {
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 0.2rem;
+  flex: 0 0 auto;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.badge-theme {
+  background: var(--finland-blue);
+}
+
+html[data-theme="dst"] .badge-theme {
+  background: #0057b8;
+}
+
+.lead {
+  color: var(--muted);
+}
+
+.nav-link {
+  scroll-margin-top: 6rem;
+}
+
+footer {
+  padding: 2rem 0 3rem;
+  color: var(--muted);
+}
+
+.section-alt {
+  background: rgba(0, 53, 128, 0.04);
+}
+
+.lang-btn {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: white;
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.lang-btn.active {
+  background: var(--finland-blue);
+  color: white;
+  border-color: var(--finland-blue);
+}
+
+html[data-theme="dst"] .lang-btn.active {
+  background: #0057b8;
+  border-color: #0057b8;
+}
+
+.lang-group {
+  gap: 0.35rem;
+}
+
+.solar-time-box {
+  min-height: 110px;
+  display: flex;
+  flex-direction: column;
+}
+
+.solar-label {
+  min-height: 2.5rem;
+}
+
+.solar-time-value {
+  margin-top: auto;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
