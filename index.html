@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title data-i18n="page.title">Aika muutokselle</title>
 
+    <meta property="og:title" content="Aika muutokselle" />
+    <meta property="og:description" content="Suomessa noudatetaan kesät talvet Venäjän aikaa vastoin maantieteellisiä ja poliittisia realiteettejä. Olisiko aika muutokselle?" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://brndd.github.io/aika_muutokselle/" />
+    <meta property="og:image" content="https://brndd.github.io/aika_muutokselle/zones_fi.png" />
+    <meta property="og:image:alt" content="A map of Finland showing time zones" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Aika muutokselle" />
+    <meta name="twitter:description" content="Suomessa noudatetaan kesät talvet Venäjän aikaa vastoin maantieteellisiä ja poliittisia realiteettejä. Olisiko aika muutokselle?" />
+    <meta name="twitter:image" content="https://brndd.github.io/aika_muutokselle/zones_fi.png" />
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
@@ -72,7 +84,7 @@
               <div class="graphic-box p-0 overflow-hidden">
                 <img
                   id="zones-map"
-                  src="zones_fi.svg"
+                  src="zones_fi.png"
                   alt="A map of Finland showing time zones"
                   class="w-100 h-100"
                   style="object-fit: cover; display: block;"
@@ -174,7 +186,7 @@
             <div class="col-lg-5 order-lg-1">
               <div class="graphic-box p-0 overflow-hidden position-relative">
                 <img
-                  src="europe_zones.svg"
+                  src="europe_zones.png"
                   alt="Colour coded time zones across Europe"
                   class="w-100 h-100"
                   style="object-fit: cover; display: block;"
@@ -532,7 +544,7 @@
         // Localize this image
         const zonesMap = document.getElementById("zones-map");
         if (zonesMap) {
-          zonesMap.src = lang === "fi" ? "zones_fi.svg" : "zones_en.svg";
+          zonesMap.src = lang === "fi" ? "zones_fi.png" : "zones_en.png";
         }
 
         // Active button state
