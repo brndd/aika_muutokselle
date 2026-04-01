@@ -266,6 +266,12 @@
 
                   <label for="solar-city" class="form-label" data-i18n="solar.city_label">Kaupunki</label>
                   <select id="solar-city" class="form-select mb-3"></select>
+                  
+                  <div class="row">
+                    <div class="col-12">
+                        <p><span data-i18n="solar.realzone-label">Todellinen aikavyöhyke</span>: <strong><span id="solar-realzone">UTC+0.00</span></strong></p>
+                    </div>
+                  </div>
 
                   <div class="row g-3 align-items-stretch">
                     <div class="col-md-4">
@@ -391,6 +397,7 @@
           "solar.note2": "Näennäinen aurinkoaika on Auringon varsinaista sijaintia vastaava aika; aika, jonka aurinkokello näyttäisi.",
           "solar.note3": `Maan kiertoradan eksentrisyyden ja Maan akselin kaltevuuden vuoksi keskimääräinen aurinkoaika vastaa näennäistä aurinkoaikaa vain neljä kertaa vuodessa.
           Ei-karkausvuosina nämä päivät ovat 15.4., 13.6., 1.9. ja 25.12.`,
+          "solar.realzone-label": "Todellinen aikavyöhyke",
 
           "footer.contact": "Yhteydenotot",
           "footer.source": "Lähdekoodi saatavilla GitHubissa.",
@@ -452,6 +459,7 @@
           "solar.note1": "Mean solar time is the time clocks would show if the reference meridian of their time zone passed directly through your city.",
           "solar.note2": "Apparent solar time is the time corresponding to the Sun's actual position; the time a sundial would show.",
           "solar.note3": `Due to the eccentricity of Earth's orbit and the tilt of Earth's axis, mean solar time matches apparent solar time only four times a year. In non-leap years, these days are April 15th, June 13th, September 1st, and December 25th.`,
+          "solar.realzone-label": "True timezone",
 
           "footer.contact": "Contact",
           "footer.source": "Source code is available on GitHub.",
@@ -512,6 +520,7 @@
           "solar.note1": "Medelsoltid är den tid klockorna skulle visa om nollmeridianen för deras tidszon gick direkt genom din stad.",
           "solar.note2": "Sann soltid är den tid som motsvarar solens faktiska position; den tid som ett solur skulle visa.",
           "solar.note3": `På grund av jordens excentriska bana och jordaxelns lutning motsvarar medelsoltiden den sanna soltiden endast fyra gånger om året. Under normalår infaller dessa dagar den 15.4, 13.6, 1.9 och 25.12.`,
+          "solar.realzone-label": "Rätt tidszon",
 
           "footer.contact": "Kontakt",
           "footer.source": "Källkoden är tillgänglig på GitHub.",
@@ -716,6 +725,12 @@
         return new Date(Math.round(date.getTime() / 60000) * 60000);
       }
 
+      function formatUtcOffset(hours) {
+        const sign = hours >= 0 ? "+" : "-";
+        const abs = Math.abs(hours);
+        return `UTC${sign}${abs.toFixed(2)}`;
+      }
+
       function updateSolarTime() {
         const select = document.getElementById("solar-city");
         const city = FINNISH_CITIES[select.value];
@@ -745,6 +760,8 @@
         const eot = equationOfTimeMinutes(now);
         const apparentSolar = new Date(meanSolar.getTime() + eot * 60000);
 
+        const realTimezone = city.lon / 15;
+        document.getElementById("solar-realzone").textContent = formatUtcOffset(realTimezone);
         document.getElementById("solar-legal").textContent = `${legalHour}:${legalMinute}:${legalSecond}`;
         document.getElementById("solar-mean").textContent = formatHMS(meanSolar);
         document.getElementById("solar-apparent").textContent = formatHMS(apparentSolar);
