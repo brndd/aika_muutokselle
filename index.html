@@ -32,6 +32,7 @@
       <div class="d-flex justify-content-end">
         <div class="d-flex align-items-center lang-group p-2 rounded-pill border bg-white shadow-sm">
           <button class="lang-btn" type="button" data-lang="fi" title="Suomi">🇫🇮 FI</button>
+          <button class="lang-btn" type="button" data-lang="sv" title="Svenska">🇸🇪 SV</button>
           <button class="lang-btn" type="button" data-lang="en" title="English">🇬🇧 EN</button>
         </div>
       </div>
@@ -453,33 +454,92 @@
           "footer.credit": "This page was created by Pekka Oinas.",
           "footer.source": "Source code is available on GitHub.",
           "footer.copyright": "Unless otherwise stated, the content and source code of this page are public domain."
+        },
+        sv: {
+          "page.title": "Tid för förändring",
+
+          "hero.title.dst": "Finland följer Moskvatid.",
+          "hero.title.winter": "Finland följer Sankt Petersburg-tid.",
+          "hero.subtitle.dst": "Under sommartid följer de finländska klockorna Moskvatid — en och en halv timme före solen.",
+          "hero.subtitle.winter": "Under vintertid följer de finländska klockorna Sankt Petersburg-tid — en halvtimme före solen.",
+          "hero.map-caption-title.dst": "Nollmeridian för sommartid",
+          "hero.map-caption-title.winter": "Nollmeridian för vintertid",
+          "hero.map-caption-body.dst": "Den röda linjen visar nollmeridianen för sommartidens tidszon.",
+          "hero.map-caption-body.winter": "Den röda linjen visar nollmeridianen för vintertidens tidszon.",
+
+          "section1.title": "Finland följer rysk tid året runt",
+          "section1.lead": "Vintertidens nollmeridian går vid Sankt Petersburg, och sommartidens ca 500 km öster om Moskva. Trots detta följer Finland just dessa tidszoner. Är det dags för en förändring?",
+          "section1.body1": `Vintertid, eller UTC+2, följer längdgraden 30°E, som endast går genom Finlands östligaste delar, ungefär på axeln Lieksa–Sankt Petersburg. Sommartid, eller UTC+3, följer längdgraden 45°E, som ligger långt utanför Finlands gränser, cirka 500 kilometer öster om Moskva.`,
+          "section1.body2": `Fastlandsfinlands gränser ligger mellan längdgraderna 21°E och 31°E. Den centraleuropeiska tidszonens (UTC+1) nollmeridian följer 15°E. Västra Finland ligger alltså närmare Sveriges och övriga Europas tid än den tid som tillämpas nu.`,
+          "section1.map_attribution": "Kartunderlag",
+
+          "section2.title": "Ingen gillar tidsomställningen",
+          "section2.lead": "Sommartiden uppfanns betydligt längre söderut än Finland i slutet av 1800-talet för att flytta de ljusa timmarna till kvällen. I Finland är detta meningslöst, eftersom det finns mer än tillräckligt med ljus på sommaren ändå.",
+          "section2.body1": "Europaparlamentet röstade redan 2019 med klar majoritet för att avskaffa klockomställningen. Inget har dock hänt, eftersom frågan fastnade i medlemsstaternas parlament. Inte heller i Finland har något beslut fattats ännu.",
+          "section2.body2": `Ett beslut måste dock fattas förr eller senare. Att stanna permanent på sommartid vore ett uselt val för Finland, då det avviker drastiskt från vår soltid. Även vintertiden avviker från soltiden i största delen av landet. Båda nuvarande tidszoner skiljer oss tidsmässigt från merparten av EU.`,
+          "section2.body3": `När tiden ändå ska reformeras, varför nöja sig med att bara slopa klockomställningen? Det vore till Finlands fördel att äntligen sluta följa rysk tid och gå över till en tidszon som bättre motsvarar vår geografiska och politiska verklighet.`,
+          "section2.map_attribution": "Kartunderlag",
+
+          "section3.title": "Finland hamnar mellan två tidszoner",
+          "section3.lead": "En halvtimmes tidszon, UTC+1,5, skulle bäst motsvara Finlands geografiska läge. Då skulle Finland vara en halvtimme före Sverige.",
+          "section3.body1": "Nollmeridianen för UTC+1,5 följer längdgraden 22,5°E, strax öster om Åbo. Den är mer exakt än UTC+2 för de delar av Finland som ligger väster om Kouvola.",
+          "section3.body2": "Halvtimmes-tidszoner är ovanliga men inte okända; de används bland annat i Kanada, Indien och Australien.",
+          "section3.body3": "På kartan intill visar den röda streckade linjen nollmeridianen för UTC+1,5 och den grå streckade linjen den punkt väster om vilken UTC+1,5 är mer exakt än UTC+2. Cirka 80 % av Finlands befolkning bor väster om den grå linjen.",
+
+          "section4.title": "Ett enhetligt EU, en enhetlig tid",
+          "section4.lead": `Det smartaste vore ändå att följa samma tidszon som majoriteten av de andra EU-länderna. Finlands allierade och handelspartner finns i väst, i UTC+1-zonen.`,
+          "section4.body1": `UTC+1 är mer exakt än UTC+2 i Finlands västligaste delar — väster om UTC+1,5. Öster om Åbo börjar den avvika mer från solens position än UTC+2. Den centraleuropeiska tidszonen har dock andra fördelar som kompenserar för den negativa tidsskillnaden.`,
+          "section4.body2": `Att följa samma tid som andra EU-länder vore till Finlands fördel, och en enhetlig tidszon vore en konkurrensfördel för EU. I nuvarande modell öppnar och stänger finländska kontor en timme tidigare än sina centraleuropeiska motsvarigheter, och anställda går på lunch vid andra tider än sina europeiska kollegor. I en internationell ekonomi skapar detta onödig friktion och gör den överlappande delen av arbetsdagen två timmar kortare.`,
+          "section4.body3": "Idag är även gränsöverskridande vänskapsrelationer via internet vanliga. Tidsskillnaden äter i praktiken upp två timmar av den tid som finns tillgänglig för dessa relationer.",
+          "section4.map_legend": "Vinter (sommar)",
+          "section4.map_attribution": "Karta",
+
+          "section5.title": "Klockans avvikelse från solen",
+          "section5.lead": "Att följa fel tidszon innebär att klocktiden inte motsvarar den faktiska tiden på dygnet. Största delen av Finland ligger året runt före solen.",
+          "section5.body1": `Finlands tidszon motsvarar solens position på himlen endast i de östligaste delarna av landet, och även då endast under vintertid. Ju längre västerut man kommer, desto mer ligger klockan före solen. Sommartiden rör till det helt; på sommaren ligger västra Finland 1,5 timme före solen.`,
+          "section5.body2": `Att bo väster om en tidszons nollmeridian, som i Finland, driver människor till att vaka senare. Kroppens naturliga rytm följer solens rörelse, och vid tidszonens västra kant går solen ner senare enligt klockan. Fenomenet kallas <strong>social jetlag</strong>. Enligt forskning orsakar det diverse hälsoproblem, från sömnbrist till ökad cancerrisk.`,
+          "section5.body3": `Att följa EU-tid skulle ha motsatt effekt: klockorna skulle gå ungefär en halvtimme efter solen. Solen skulle gå ner något tidigare, vilket bara är önskvärt under sommarens ljusa kvällar. Den skulle också gå upp något tidigare, vilket vore en fördel under vinterns mörka morgnar.`,
+          "section5.body4": "Se i räknaren intill vad klockan egentligen borde vara i din stad.",
+
+          "solar.lead": "Välj din närmaste stad så berättar räknaren vad klockan egentligen borde vara.",
+          "solar.city_label": "Stad",
+          "solar.legal_label": "Officiell tid",
+          "solar.mean_label": "Medelsoltid",
+          "solar.apparent_label": "Sann soltid",
+          "solar.note1": "Medelsoltid är den tid klockorna skulle visa om nollmeridianen för deras tidszon gick direkt genom din stad.",
+          "solar.note2": "Sann soltid är den tid som motsvarar solens faktiska position; den tid som ett solur skulle visa.",
+          "solar.note3": `På grund av jordens excentriska bana och jordaxelns lutning motsvarar medelsoltiden den sanna soltiden endast fyra gånger om året. Under normalår infaller dessa dagar den 15.4, 13.6, 1.9 och 25.12.`,
+
+          "footer.credit": "Sidan skapad av Pekka Oinas.",
+          "footer.source": "Källkoden är tillgänglig på GitHub.",
+          "footer.copyright": "Om inget annat anges är innehållet och källkoden på denna sida fritt från upphovsrätt."
         }
       };
 
 
       const FINNISH_CITIES = {
-        espoo: { fi: "Espoo", en: "Espoo", lon: 24.6559 },
-        helsinki: { fi: "Helsinki", en: "Helsinki", lon: 24.9384 },
-        hameenlinna: { fi: "Hämeenlinna", en: "Hämeenlinna", lon: 24.4643 },
-        joensuu: { fi: "Joensuu", en: "Joensuu", lon: 29.7636 },
-        jyvaskyla: { fi: "Jyväskylä", en: "Jyväskylä", lon: 25.7482 },
-        kajaani: { fi: "Kajaani", en: "Kajaani", lon: 27.7288 },
-        kotka: { fi: "Kotka", en: "Kotka", lon: 26.9458 },
-        kouvola: { fi: "Kouvola", en: "Kouvola", lon: 26.7042 },
-        kuopio: { fi: "Kuopio", en: "Kuopio", lon: 27.6770 },
-        kuusamo: { fi: "Kuusamo", en: "Kuusamo", lon: 29.1851 },
-        lahti: { fi: "Lahti", en: "Lahti", lon: 25.6615 },
-        lappeenranta: { fi: "Lappeenranta", en: "Lappeenranta", lon: 28.1897 },
-        mariehamn: { fi: "Maarianhamina", en: "Mariehamn", lon: 19.9348 },
-        mikkeli: { fi: "Mikkeli", en: "Mikkeli", lon: 27.2723 },
-        oulu: { fi: "Oulu", en: "Oulu", lon: 25.4651 },
-        pori: { fi: "Pori", en: "Pori", lon: 21.7974 },
-        rovaniemi: { fi: "Rovaniemi", en: "Rovaniemi", lon: 25.7294 },
-        savonlinna: { fi: "Savonlinna", en: "Savonlinna", lon: 28.8833 },
-        seinajoki: { fi: "Seinäjoki", en: "Seinäjoki", lon: 22.8403 },
-        tampere: { fi: "Tampere", en: "Tampere", lon: 23.7610 },
-        turku: { fi: "Turku", en: "Turku", lon: 22.2666 },
-        vaasa: { fi: "Vaasa", en: "Vaasa", lon: 21.6158 }
+        espoo: { fi: "Espoo", en: "Espoo", sv: "Esbo", lon: 24.6559 },
+        helsinki: { fi: "Helsinki", en: "Helsinki", sv: "Helsingfors", lon: 24.9384 },
+        hameenlinna: { fi: "Hämeenlinna", en: "Hämeenlinna", sv: "Tavastehus", lon: 24.4643 },
+        joensuu: { fi: "Joensuu", en: "Joensuu", sv: "Joensuu", lon: 29.7636 },
+        jyvaskyla: { fi: "Jyväskylä", en: "Jyväskylä", sv: "Jyväskylä", lon: 25.7482 },
+        kajaani: { fi: "Kajaani", en: "Kajaani", sv: "Kajana", lon: 27.7288 },
+        kotka: { fi: "Kotka", en: "Kotka", sv: "Kotka", lon: 26.9458 },
+        kouvola: { fi: "Kouvola", en: "Kouvola", sv: "Kouvola", lon: 26.7042 },
+        kuopio: { fi: "Kuopio", en: "Kuopio", sv: "Kuopio", lon: 27.6770 },
+        kuusamo: { fi: "Kuusamo", en: "Kuusamo", sv: "Kuusamo", lon: 29.1851 },
+        lahti: { fi: "Lahti", en: "Lahti", sv: "Lahtis", lon: 25.6615 },
+        lappeenranta: { fi: "Lappeenranta", en: "Lappeenranta", sv: "Villmanstrand", lon: 28.1897 },
+        mariehamn: { fi: "Maarianhamina", en: "Mariehamn", sv: "Mariehamn", lon: 19.9348 },
+        mikkeli: { fi: "Mikkeli", en: "Mikkeli", sv: "Sankt Michel", lon: 27.2723 },
+        oulu: { fi: "Oulu", en: "Oulu", sv: "Uleåborg", lon: 25.4651 },
+        pori: { fi: "Pori", en: "Pori", sv: "Björneborg", lon: 21.7974 },
+        rovaniemi: { fi: "Rovaniemi", en: "Rovaniemi", sv: "Rovaniemi", lon: 25.7294 },
+        savonlinna: { fi: "Savonlinna", en: "Savonlinna", sv: "Nyslott", lon: 28.8833 },
+        seinajoki: { fi: "Seinäjoki", en: "Seinäjoki", sv: "Seinäjoki", lon: 22.8403 },
+        tampere: { fi: "Tampere", en: "Tampere", sv: "Tammerfors", lon: 23.7610 },
+        turku: { fi: "Turku", en: "Turku", sv: "Åbo", lon: 22.2666 },
+        vaasa: { fi: "Vaasa", en: "Vaasa", sv: "Vasa", lon: 21.6158 }
       };
 
       function isDstInFinland(date = new Date()) {
@@ -506,7 +566,7 @@
 
         const browser = navigator.language.toLowerCase();
         if (browser.startsWith("fi")) return "fi";
-        //if (browser.startsWith("sv")) return "sv";
+        if (browser.startsWith("sv")) return "sv";
         return "en";
       }
 
@@ -544,7 +604,15 @@
         // Localize this image
         const zonesMap = document.getElementById("zones-map");
         if (zonesMap) {
-          zonesMap.src = lang === "fi" ? "zones_fi.png" : "zones_en.png";
+          if (lang === "fi") {
+            zonesMap.src = "zones_fi.png";
+          }
+          else if (lang === "sv") {
+            zonesMap.src = "zones_sv.png";
+          }
+          else {
+            zonesMap.src = "zones_en.png";
+          }
         }
 
         // Active button state
