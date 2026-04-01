@@ -12,6 +12,7 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☀️</text></svg>">
   </head>
   <body>
     <main id="top">
@@ -53,7 +54,7 @@
       <section id="section1" class="section section-alt">
         <div class="container">
           <div class="row align-items-center g-4">
-            <div class="col-lg-7">
+            <div class="col-lg-7 order-lg-1">
               <h2 class="section-title fw-bold" data-i18n="section1.title">Suomessa noudatetaan kesät talvet Venäjän aikaa</h2>
               <p class="lead" data-i18n="section1.lead">
                 Talviajan nollakohta kulkee Pietarin kohdalla. Kesäajan nollakohta on n. 500 km Moskovasta itään. Tästä huolimatta Suomessa seurataan juuri näitä aikavyöhykkeitä. Olisiko aika muutokselle?
@@ -67,7 +68,7 @@
                 Ruotsin ja muun Euroopan aikaa kuin nykyisin noudatettua aikaa.
               </p>
             </div>
-            <div class="col-lg-5">
+            <div class="col-lg-5 order-lg-2">
               <div class="graphic-box p-0 overflow-hidden">
                 <img
                   id="zones-map"
@@ -88,25 +89,33 @@
       <section id="section2" class="section">
         <div class="container">
           <div class="row align-items-center g-4">
-            <div class="col-lg-7 order-lg-2">
-              <h2 class="section-title fw-bold" data-i18n="section2.title">Suomi on aikavyöhykkeiden väliinputoaja</h2>
+            <div class="col-lg-9 order-lg-2">
+              <h2 class="section-title fw-bold" data-i18n="section2.title">Kellojen siirtelystä ei tykkää kukaan</h2>
               <p class="lead" data-i18n="section2.lead">
-                Kaikista parhaiten Suomen maantieteellistä sijaintia vastaisi puolituntinen aikavyöhyke, UTC+1.5. Tällöin Suomi olisi puoli tuntia Ruotsia edellä.
+                Kesäaika keksittiin Suomea etelämmässä 1800–luvun lopulla siirtämään valoisia tunteja illalle. Suomessa tässä ei ole mitään järkeä, sillä kesällä valoa riittää joka tapauksessa liiaksikin.
               </p>
               <p data-i18n="section2.body1">
-                UTC+1.5:n nollakohta kulkee 22,5°E pituuspiirin myötäisesti hieman Turun itäpuolella. Se on nykyistä talviaikaa tarkempi osapuilleen Kouvolaa läntisemmässä Suomessa.
-                Noin 80 % Suomen väestöstä asuu tämän linjan länsipuolella. 
+                Euroopan parlamentti äänesti jo vuonna 2019 selvällä enemmistöllä kellonsiirron lopettamisen puolesta. Mitään ei kuitenkaan tapahtunut, sillä asia jumittui jäsenmaiden parlamentteihin.
+                Suomessakaan ei ole vielä tehty päätöstä.
               </p>
               <p data-i18n="section2.body2">
-                Puolituntiset aikavyöhykkeet ovat epätavallisia, mutta eivät ennenkuulumattomia; sellaista seurataan mm. Kanadassa, Intiassa ja Australiassa.
+                Päätös on kuitenkin tehtävä joskus. Kesäaikaan pysyvästi jääminen olisi Suomen kannalta surkea päätös, sillä se poikkeaa räikeästi aurinkoajastamme.
+                Myös talviaika poikkeaa suurimmassa osassa maata aurinkoajasta. Molemmat nykyisistä aikavyöhykkeistä erottavat meitä ajallisesti suurimmasta osasta muuta EU:ta.
               </p>
               <p data-i18n="section2.body3">
-                Vasemmalla olevassa kartassa punainen katkoviiva näyttää UTC+1.5:n nollakohdan ja harmaa katkoviiva kohdan, jonka länsipuolella UTC+1.5 on tarkempi, kuin UTC+2.
+                Kun aikaa kerran ollaan uudistamassa, niin miksi tyytyä kellojen siirtelystä luopumiseen? Olisi Suomen kannalta edullista lopettaa viimeinkin Venäjän ajan seuraaminen ja siirtyä
+                geografista ja poliittista todellisuuttamme paremmin vastaavaan aikavyöhykkeeseen.
               </p>
             </div>
-            <div class="col-lg-5 order-lg-1">
-              <div class="graphic-box p-4">
-                <div id="map2" style="height: 400px; width: 100%; border-radius: 1rem; overflow: hidden;"></div>
+            <div class="col-lg-3 order-lg-1">
+              <div class="graphic-box p-0 overflow-hidden">
+                <img
+                  id="begin-eest"
+                  src="Begin_EEST.svg"
+                  alt="A picture of a clock changing from normal time to daylight saving time"
+                  class="h-100"
+                  style="object-fit: cover; display: block;"
+                />
               </div>
             </div>
           </div>
@@ -117,24 +126,52 @@
         <div class="container">
           <div class="row align-items-center g-4">
             <div class="col-lg-7 order-lg-1">
-              <h2 class="section-title fw-bold" data-i18n="section3.title">Yhtenäinen EU, yhtenäinen aika</h2>
+              <h2 class="section-title fw-bold" data-i18n="section3.title">Suomi on aikavyöhykkeiden väliinputoaja</h2>
               <p class="lead" data-i18n="section3.lead">
-                Fiksuinta olisi kuitenkin noudattaa samaa aikavyöhykettä, kuin valtaosa muistakin EU-maista.
-                Suomen liittolaiset ja kauppakumppanit ovat lännessä, UTC+1–vyöhykkeellä.
+                Kaikista parhaiten Suomen maantieteellistä sijaintia vastaisi puolituntinen aikavyöhyke, UTC+1.5. Tällöin Suomi olisi puoli tuntia Ruotsia edellä.
               </p>
-              <p data-i18n="section3.body1">UTC+1 on tarkempi, kuin UTC+2 läntisimmissä osissa Suomea — UTC+1.5:n länsipuolella. Turusta itään päin mennessä se alkaa erkanemaan Auringon sijainnista
-                UTC+2:a enemmän. Keski-Euroopan aikavyöhykkeessä on kuitenkin muita puolia, jotka kompensoivat miinusmerkkistä aikaeroa.
+              <p data-i18n="section3.body1">
+                UTC+1.5:n nollakohta kulkee 22,5°E pituuspiirin myötäisesti hieman Turun itäpuolella. Se on nykyistä talviaikaa tarkempi osapuilleen Kouvolaa läntisemmässä Suomessa.
+                Noin 80 % Suomen väestöstä asuu tämän linjan länsipuolella. 
               </p>
               <p data-i18n="section3.body2">
-                Muita EU-maita vastaavan ajan noudattaminen olisi Suomen etu, ja yhtenäinen aikavyöhyke olisi EU:lle kilpailuetu.
-                Nykymallissa suomalaiset konttorit aukeavat ja sulkeutuvat tuntia Keski-Eurooppalaisia vastineitaan aiemmin ja työntekijät lähtevät lounaalle eri aikaan,
-                kuin Eurooppalaiset kollegansa. Monikansallisessa talouselämässä tämä lisää päivittäiseen toimintaan turhaa kitkaa ja tekee työpäivien päällekkäisestä osasta kaksi tuntia lyhyemmän.
+                Puolituntiset aikavyöhykkeet ovat epätavallisia, mutta eivät ennenkuulumattomia; sellaista seurataan mm. Kanadassa, Intiassa ja Australiassa.
               </p>
               <p data-i18n="section3.body3">
-                Nykypäivänä myös rajat ylittävät, etupäässä internetin kautta välittyvät ystävyyssuhteet ovat yleisiä. Aikaero nakertaa näihinkin käytettävästä ajasta käytännössä kaksi tuntia pois.
+                Vasemmalla olevassa kartassa punainen katkoviiva näyttää UTC+1.5:n nollakohdan ja harmaa katkoviiva kohdan, jonka länsipuolella UTC+1.5 on tarkempi, kuin UTC+2.
               </p>
             </div>
             <div class="col-lg-5 order-lg-2">
+              <div class="graphic-box p-4">
+                <div id="map2" style="height: 400px; width: 100%; border-radius: 1rem; overflow: hidden;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section4" class="section">
+        <div class="container">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-7 order-lg-2">
+              <h2 class="section-title fw-bold" data-i18n="section4.title">Yhtenäinen EU, yhtenäinen aika</h2>
+              <p class="lead" data-i18n="section4.lead">
+                Fiksuinta olisi kuitenkin noudattaa samaa aikavyöhykettä, kuin valtaosa muistakin EU-maista.
+                Suomen liittolaiset ja kauppakumppanit ovat lännessä, UTC+1–vyöhykkeellä.
+              </p>
+              <p data-i18n="section4.body1">UTC+1 on tarkempi, kuin UTC+2 läntisimmissä osissa Suomea — UTC+1.5:n länsipuolella. Turusta itään päin mennessä se alkaa erkanemaan Auringon sijainnista
+                UTC+2:a enemmän. Keski-Euroopan aikavyöhykkeessä on kuitenkin muita puolia, jotka kompensoivat miinusmerkkistä aikaeroa.
+              </p>
+              <p data-i18n="section4.body2">
+                Muita EU-maita vastaavan ajan noudattaminen olisi Suomen etu, ja yhtenäinen aikavyöhyke olisi EU:lle kilpailuetu.
+                Nykymallissa suomalaiset konttorit aukeavat ja sulkeutuvat tuntia keskieurooppalaisia vastineitaan aiemmin ja työntekijät lähtevät lounaalle eri aikaan,
+                kuin eurooppalaiset kollegansa. Monikansallisessa talouselämässä tämä lisää päivittäiseen toimintaan turhaa kitkaa ja tekee työpäivien päällekkäisestä osasta kaksi tuntia lyhyemmän.
+              </p>
+              <p data-i18n="section4.body3">
+                Nykypäivänä myös rajat ylittävät, etupäässä internetin kautta välittyvät ystävyyssuhteet ovat yleisiä. Aikaero nakertaa näihinkin käytettävästä ajasta käytännössä kaksi tuntia pois.
+              </p>
+            </div>
+            <div class="col-lg-5 order-lg-1">
               <div class="graphic-box p-0 overflow-hidden position-relative">
                 <img
                   src="europe_zones.svg"
@@ -144,7 +181,7 @@
                 />
 
                 <div class="map-legend">
-                  <div class="fw-bold mb-2"><span data-i18n="section3.map_legend">Talvi (kesä)</span></div>
+                  <div class="fw-bold mb-2"><span data-i18n="section4.map_legend">Talvi (kesä)</span></div>
                   <div class="legend-item">
                     <span class="legend-swatch" style="background:#c0bffd;"></span>
                     UTC+0
@@ -176,39 +213,39 @@
                 </div>
               </div>
               <p class="small text-muted mt-2 mb-0 attribution">
-                <span data-i18n="section3.map_attribution">Kartta</span>: <a href="https://commons.wikimedia.org/wiki/File:Time_zones_of_the_Greater_Europe.svg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a> / <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+                <span data-i18n="section4.map_attribution">Kartta</span>: <a href="https://commons.wikimedia.org/wiki/File:Time_zones_of_the_Greater_Europe.svg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a> / <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="section4" class="section">
+      <section id="section5" class="section section-alt">
         <div class="container">
           <div class="row align-items-center g-4">
-            <div class="col-lg-7 order-lg-2">
-              <h2 class="section-title fw-bold" data-i18n="section4.title">Kellonajan erkaneminen Auringosta</h2>
-              <p class="lead" data-i18n="section4.lead">
+            <div class="col-lg-7 order-lg-1">
+              <h2 class="section-title fw-bold" data-i18n="section5.title">Kellonajan erkaneminen Auringosta</h2>
+              <p class="lead" data-i18n="section5.lead">
                 Väärän aikavyöhykkeen noudattaminen tarkoittaa, ettei kellonaika vastaa varsinaista päivänaikaa. Valtaosa Suomesta on ympärivuotisesti Aurinkoa edellä.
               </p>
-              <p data-i18n="section4.body1">
+              <p data-i18n="section5.body1">
                 Aikavyöhyke vastaa Auringon sijaintia taivaalla ainoastaan aivan Suomen itäisimmissä osissa ja sielläkin vain talviajassa. Mitä lännemmäksi mennään,
                 sitä enemmän kello on Aurinkoa edellä. Kesäaika sotkee tilanteen täysin; kesällä Länsi-Suomi on 1.5 tuntia Aurinkoa edellä.
               </p>
-              <p data-i18n="section4.body2">
+              <p data-i18n="section5.body2">
                 Aikavyöhykkeen nollakohdan länsipuolella eläminen, kuten Suomessa, ajaa ihmisiä valvomaan myöhempään. Kehon luontainen rytmi seuraa Auringon liikehdintää, ja aikavyöhykkeen
                 länsireunalla Aurinko laskee kellotaulun mukaan myöhemmin.
                 Ilmiötä kutsutaan <strong>sosiaaliseksi aikaerorasitukseksi</strong> (<em>social jet-lag</em>). Tutkimustiedon mukaan se aiheuttaa monenlaisia terveyshaittoja univajeesta kohonneeseen syöpäriskiin.
               </p>
-              <p data-i18n="section4.body3">
+              <p data-i18n="section5.body3">
                 EU-ajan seuraamisella olisi päinvastainen vaikutus. Kellot kulkisivat puolisen tuntia Aurinkoa jäljessä. Aurinko laskisi hieman aiemmin, joka kesän valoisina iltoina on vain toivottavaa.
                 Se myös nousisi hieman aiemmin, joka olisi eduksi talven pimeinä aamuina.
               </p>
-              <p data-i18n="section4.body4">
+              <p data-i18n="section5.body4">
                 Katso vierestä löytyvästä laskurista, paljonko kello oikeasti kaupungissasi on.
               </p>
             </div>
-            <div class="col-lg-5 order-lg-1">
+            <div class="col-lg-5 order-lg-2">
               <div class="card h-100">
                 <div class="card-body p-4 d-flex flex-column">
                   <p class="lead" data-i18n="solar.lead">Valitse lähin kaupunkisi ja laskuri kertoo sinulle paljonko kellon oikeasti pitäisi olla.</p>
@@ -289,35 +326,43 @@
           Ruotsin ja muun Euroopan aikaa kuin nykyisin noudatettua aikaa.`,
           "section1.map_attribution": "Karttapohja",
 
-          "section2.title": "Suomi on aikavyöhykkeiden väliinputoaja",
-          "section2.lead": "Kaikista parhaiten Suomen maantieteellistä sijaintia vastaisi puolituntinen aikavyöhyke, UTC+1.5. Tällöin Suomi olisi puoli tuntia Ruotsia edellä.",
-          "section2.body1": `UTC+1.5:n nollakohta kulkee 22,5°E pituuspiirin myötäisesti hieman Turun itäpuolella. Se on tarkempi, kuin UTC+2 osapuilleen Kouvolaa läntisemmässä Suomessa.
-          Noin 80 % Suomen väestöstä asuu tämän linjan länsipuolella.`,
-          "section2.body2": "Puolituntiset aikavyöhykkeet ovat epätavallisia, mutta eivät ennenkuulumattomia; sellaista seurataan mm. Kanadassa, Intiassa ja Australiassa.",
-          "section2.body3": "Vasemmalla olevassa kartassa punainen katkoviiva näyttää UTC+1.5:n nollakohdan ja harmaa katkoviiva kohdan, jonka länsipuolella UTC+1.5 on tarkempi, kuin UTC+2.",
+          "section2.title": "Kellojen siirtelystä ei tykkää kukaan",
+          "section2.lead": "Kesäaika keksittiin Suomea etelämmässä 1800–luvun lopulla siirtämään valoisia tunteja illalle. Suomessa tässä ei ole mitään järkeä, sillä kesällä valoa riittää joka tapauksessa liiaksikin.",
+          "section2.body1": "Euroopan parlamentti äänesti jo vuonna 2019 selvällä enemmistöllä kellonsiirron lopettamisen puolesta. Mitään ei kuitenkaan tapahtunut, sillä asia jumittui jäsenmaiden parlamentteihin. Suomessakaan päätöstä ei ole vielä tehty.",
+          "section2.body2": `Päätös on kuitenkin tehtävä joskus. Kesäaikaan pysyvästi jääminen olisi Suomen kannalta surkea päätös, sillä se poikkeaa räikeästi aurinkoajastamme.
+          Myös talviaika poikkeaa suurimmassa osassa maata aurinkoajasta. Molemmat nykyisistä aikavyöhykkeistä erottavat meitä ajallisesti suurimmasta osasta muuta EU:ta.`,
+          "section2.body3": `Kun aikaa kerran ollaan uudistamassa, niin miksi tyytyä kellojen siirtelystä luopumiseen? Olisi Suomen kannalta edullista lopettaa viimeinkin Venäjän ajan seuraaminen ja siirtyä
+          geografista ja poliittista todellisuuttamme paremmin vastaavaan aikavyöhykkeeseen.`,
+          "section2.map_attribution": "Karttapohja",
 
-          "section3.title": "Yhtenäinen EU, yhtenäinen aika",
-          "section3.lead": `Fiksuinta olisi kuitenkin noudattaa samaa aikavyöhykettä, kuin valtaosa muistakin EU-maista.
+          "section3.title": "Suomi on aikavyöhykkeiden väliinputoaja",
+          "section3.lead": "Kaikista parhaiten Suomen maantieteellistä sijaintia vastaisi puolituntinen aikavyöhyke, UTC+1.5. Tällöin Suomi olisi puoli tuntia Ruotsia edellä.",
+          "section3.body1": "UTC+1.5:n nollakohta kulkee 22,5°E pituuspiirin myötäisesti hieman Turun itäpuolella. Se on tarkempi, kuin UTC+2 osapuilleen Kouvolaa läntisemmässä Suomessa.",
+          "section3.body2": "Puolituntiset aikavyöhykkeet ovat epätavallisia, mutta eivät ennenkuulumattomia; sellaista seurataan mm. Kanadassa, Intiassa ja Australiassa.",
+          "section3.body3": "Vierestä löytyvässä kartassa punainen katkoviiva näyttää UTC+1.5:n nollakohdan ja harmaa katkoviiva kohdan, jonka länsipuolella UTC+1.5 on tarkempi, kuin UTC+2. Noin 80 % Suomen väestöstä asuu harmaan viivan länsipuolella.",
+
+          "section4.title": "Yhtenäinen EU, yhtenäinen aika",
+          "section4.lead": `Fiksuinta olisi kuitenkin noudattaa samaa aikavyöhykettä, kuin valtaosa muistakin EU-maista.
           Suomen liittolaiset ja kauppakumppanit ovat lännessä, UTC+1–vyöhykkeellä.`,
-          "section3.body1": `UTC+1 on tarkempi, kuin UTC+2 läntisimmissä osissa Suomea — UTC+1.5:n länsipuolella. Turusta itään päin mennessä se alkaa erkanemaan Auringon sijainnista
+          "section4.body1": `UTC+1 on tarkempi, kuin UTC+2 läntisimmissä osissa Suomea — UTC+1.5:n länsipuolella. Turusta itään päin mennessä se alkaa erkanemaan Auringon sijainnista
           UTC+2:a enemmän. Keski-Euroopan aikavyöhykkeessä on kuitenkin muita puolia, jotka kompensoivat miinusmerkkistä aikaeroa.`,
-          "section3.body2": `Muita EU-maita vastaavan ajan noudattaminen olisi Suomen etu, ja yhtenäinen aikavyöhyke olisi EU:lle kilpailuetu.
-          Nykymallissa suomalaiset konttorit aukeavat ja sulkeutuvat tuntia Keski-Eurooppalaisia vastineitaan aiemmin ja työntekijät lähtevät lounaalle eri aikaan,
-          kuin Eurooppalaiset kollegansa. Monikansallisessa talouselämässä tämä lisää päivittäiseen toimintaan turhaa kitkaa ja tekee työpäivien päällekkäisestä osasta kaksi tuntia lyhyemmän.`,
-          "section3.body3": "Nykypäivänä myös rajat ylittävät, etupäässä internetin kautta välittyvät ystävyyssuhteet ovat yleisiä. Aikaero nakertaa näihinkin käytettävästä ajasta käytännössä kaksi tuntia pois.",
-          "section3.map_legend": "Talvi (kesä)",
-          "section3.map_attribution": "Kartta",
+          "section4.body2": `Muita EU-maita vastaavan ajan noudattaminen olisi Suomen etu, ja yhtenäinen aikavyöhyke olisi EU:lle kilpailuetu.
+          Nykymallissa suomalaiset konttorit aukeavat ja sulkeutuvat tuntia keskieurooppalaisia vastineitaan aiemmin ja työntekijät lähtevät lounaalle eri aikaan,
+          kuin eurooppalaiset kollegansa. Monikansallisessa talouselämässä tämä lisää päivittäiseen toimintaan turhaa kitkaa ja tekee työpäivien päällekkäisestä osasta kaksi tuntia lyhyemmän.`,
+          "section4.body3": "Nykypäivänä myös rajat ylittävät, etupäässä internetin kautta välittyvät ystävyyssuhteet ovat yleisiä. Aikaero nakertaa näihinkin käytettävästä ajasta käytännössä kaksi tuntia pois.",
+          "section4.map_legend": "Talvi (kesä)",
+          "section4.map_attribution": "Kartta",
 
-          "section4.title": "Kellonajan erkaneminen Auringosta",
-          "section4.lead": "Väärän aikavyöhykkeen noudattaminen tarkoittaa, ettei kellonaika vastaa varsinaista päivänaikaa. Valtaosa Suomesta on ympärivuotisesti Aurinkoa edellä.",
-          "section4.body1": `Suomen aikavyöhyke vastaa Auringon sijaintia taivaalla ainoastaan aivan Suomen itäisimmissä osissa ja sielläkin vain talviajassa. Mitä lännemmäksi mennään,
+          "section5.title": "Kellonajan erkaneminen Auringosta",
+          "section5.lead": "Väärän aikavyöhykkeen noudattaminen tarkoittaa, ettei kellonaika vastaa varsinaista päivänaikaa. Valtaosa Suomesta on ympärivuotisesti Aurinkoa edellä.",
+          "section5.body1": `Suomen aikavyöhyke vastaa Auringon sijaintia taivaalla ainoastaan aivan Suomen itäisimmissä osissa ja sielläkin vain talviajassa. Mitä lännemmäksi mennään,
           sitä enemmän kello on Aurinkoa edellä. Kesäaika sotkee tilanteen täysin; kesällä Länsi-Suomi on 1.5 tuntia Aurinkoa edellä.`,
-          "section4.body2": `Aikavyöhykkeen nollakohdan länsipuolella eläminen, kuten Suomessa, ajaa ihmisiä valvomaan myöhempään. Kehon luontainen rytmi seuraa Auringon liikehdintää, ja aikavyöhykkeen
+          "section5.body2": `Aikavyöhykkeen nollakohdan länsipuolella eläminen, kuten Suomessa, ajaa ihmisiä valvomaan myöhempään. Kehon luontainen rytmi seuraa Auringon liikehdintää, ja aikavyöhykkeen
           länsireunalla Aurinko laskee kellotaulun mukaan myöhemmin.
           Ilmiötä kutsutaan <strong>sosiaaliseksi aikaerorasitukseksi</strong> (<em>social jet-lag</em>). Tutkimustiedon mukaan se aiheuttaa monenlaisia terveyshaittoja univajeesta kohonneeseen syöpäriskiin.`,
-          "section4.body3": `EU-ajan seuraamisella olisi päinvastainen vaikutus: kellot kulkisivat puolisen tuntia Aurinkoa jäljessä. Aurinko laskisi hieman aiemmin, joka kesän valoisina iltoina on vain toivottavaa.
+          "section5.body3": `EU-ajan seuraamisella olisi päinvastainen vaikutus: kellot kulkisivat puolisen tuntia Aurinkoa jäljessä. Aurinko laskisi hieman aiemmin, joka kesän valoisina iltoina on vain toivottavaa.
           Se myös nousisi hieman aiemmin, joka olisi eduksi talven pimeinä aamuina.`,
-          "section4.body4": "Katso vierestä löytyvästä laskurista, paljonko kello oikeasti kaupungissasi on.",
+          "section5.body4": "Katso vierestä löytyvästä laskurista, paljonko kello oikeasti kaupungissasi on.",
 
           "solar.lead": "Valitse lähin kaupunkisi ja laskuri kertoo sinulle paljonko kellon oikeasti pitäisi olla.",
           "solar.city_label": "Kaupunki",
@@ -334,8 +379,8 @@
         en: {
           "page.title": "Time for a change",
 
-          "hero.title.dst": "Finland follows Moscow time.",
-          "hero.title.winter": "Finland follows St. Petersburg time.",
+          "hero.title.dst": "Finland is following Moscow time.",
+          "hero.title.winter": "Finland is following St. Petersburg time.",
           "hero.subtitle.dst": "During daylight saving time, Finnish clocks follow Moscow time — one and a half hours ahead of the Sun.",
           "hero.subtitle.winter": "During winter time, Finnish clocks follow Saint Petersburg time — half an hour ahead of the Sun.",
           "hero.map-caption-title.dst": "Summer time reference meridian",
@@ -349,26 +394,34 @@
           "section1.body2": `Mainland Finland's borders lie between the 21°E and 31°E meridians. The reference meridian for the Central European time zone, UTC+1, follows 15°E. Western Finland is therefore closer to the time in Sweden and the rest of Europe than the time currently observed.`,
           "section1.map_attribution": "Map base",
 
-          "section2.title": "Finland is caught between time zones",
-          "section2.lead": "A half-hour time zone, UTC+1.5, would best correspond to Finland's geographical location. In this case, Finland would be half an hour ahead of Sweden.",
-          "section2.body1": `The reference meridian for UTC+1.5 follows 22.5°E, passing slightly east of Turku. It is more accurate than UTC+2 for parts of Finland roughly west of Kouvola. Approximately 80% of Finland's population lives west of this line.`,
-          "section2.body2": "Half-hour time zones are unusual but not unheard of; they are observed in places like Canada, India, and Australia.",
-          "section2.body3": "On the map to the left, the red dashed line shows the UTC+1.5 reference meridian, and the gray dashed line indicates the point west of which UTC+1.5 is more accurate than UTC+2.",
+          "section2.title": "Nobody likes changing the clocks",
+          "section2.lead": "Daylight Saving Time was conceived much further south than Finland in the late 19th century to shift daylight hours to the evening. In Finland, this makes little sense, as there is more than enough light during the summer anyway.",
+          "section2.body1": "In 2019, the European Parliament voted by a clear majority to end the seasonal clock changes. However, progress stalled as the matter became stuck in the parliaments of member states. Finland has not yet made a decision either.",
+          "section2.body2": `However, the decision must be made eventually. Staying on permanent summer time would be a poor choice for Finland, as it deviates drastically from our solar time. Even winter time deviates from solar time across most of the country.
+          Both of the currently used time zones set us apart in time from the majority of the EU.`,
+          "section2.body3": `Since the system is being reformed anyway, why settle for just abolishing clock changes? It would be in Finland's best interest to finally stop following Russian time and move to a time zone that better reflects our geographical and political reality.`,
+          "section2.map_attribution": "Base map",
 
-          "section3.title": "Unified EU, unified time",
-          "section3.lead": `However, the smartest move would be to follow the same time zone as the majority of other EU countries. Finland's allies and trading partners are to the west, in the UTC+1 zone.`,
-          "section3.body1": `UTC+1 is more accurate than UTC+2 in the westernmost parts of Finland — west of UTC+1.5. Moving east from Turku, it begins to deviate from the Sun's position more than UTC+2. However, the Central European time zone has other aspects that compensate for the negative time offset.`,
-          "section3.body2": `Following the same time as other EU countries would be in Finland's interest, and a unified time zone would be a competitive advantage for the EU. In the current model, Finnish offices open and close an hour earlier than their Central European counterparts, and employees go to lunch at different times than their European colleagues. In a multinational economy, this adds unnecessary friction to daily operations and makes the overlapping part of workdays two hours shorter.`,
-          "section3.body3": "Today, cross-border friendships — primarily conducted over the internet — are also common. The time difference effectively eats away two hours of time available for these relationships.",
-          "section3.map_legend": "Winter (Summer)",
-          "section3.map_attribution": "Map",
+          "section3.title": "Finland is caught between time zones",
+          "section3.lead": "A half-hour time zone, UTC+1.5, would best correspond to Finland's geographical location. In this case, Finland would be half an hour ahead of Sweden.",
+          "section3.body1": `The reference meridian for UTC+1.5 follows 22.5°E, passing slightly east of Turku. It is more accurate than UTC+2 for parts of Finland roughly west of Kouvola.`,
+          "section3.body2": "Half-hour time zones are unusual but not unheard of; they are observed in places like Canada, India, and Australia.",
+          "section3.body3": "On this map, the red dashed line shows the UTC+1.5 reference meridian, and the gray dashed line indicates the point west of which UTC+1.5 is more accurate than UTC+2. Approximately 80% of Finland's population lives west of the gray line.",
 
-          "section4.title": "The clock's divergence from the Sun",
-          "section4.lead": "Following the wrong time zone means the clock time does not correspond to the actual time of day. Most of Finland is ahead of the Sun year-round.",
-          "section4.body1": `Finland's time zone corresponds to the Sun's position in the sky only in the easternmost parts of Finland, and even then only during winter time. The further west you go, the more the clock is ahead of the Sun. Summer time disrupts the situation completely; in summer, Western Finland is 1.5 hours ahead of the Sun.`,
-          "section4.body2": `Living west of a time zone's reference meridian, as in Finland, pushes people to stay up later. The body's natural rhythm follows the movement of the Sun, and on the western edge of a time zone, the Sun sets later according to the clock. This phenomenon is called <strong>social jet-lag</strong>. According to research, it causes various health problems ranging from sleep deprivation to an increased risk of cancer.`,
-          "section4.body3": `Following EU time would have the opposite effect: clocks would run about half an hour behind the Sun. The Sun would set a bit earlier, which would be a nice thing during the bright evenings of summer. It would also rise a bit earlier, which would be an advantage during the dark mornings of winter.`,
-          "section4.body4": "Check the calculator to the side to see what time it actually is in your city.",
+          "section4.title": "Unified EU, unified time",
+          "section4.lead": `However, the smartest move would be to follow the same time zone as the majority of other EU countries. Finland's allies and trading partners are to the west, in the UTC+1 zone.`,
+          "section4.body1": `UTC+1 is more accurate than UTC+2 in the westernmost parts of Finland — west of UTC+1.5. Moving east from Turku, it begins to deviate from the Sun's position more than UTC+2. However, the Central European time zone has other aspects that compensate for the negative time offset.`,
+          "section4.body2": `Following the same time as other EU countries would be in Finland's interest, and a unified time zone would be a competitive advantage for the EU. In the current model, Finnish offices open and close an hour earlier than their Central European counterparts, and employees go to lunch at different times than their European colleagues. In a multinational economy, this adds unnecessary friction to daily operations and makes the overlapping part of workdays two hours shorter.`,
+          "section4.body3": "Today, cross-border friendships — primarily conducted over the internet — are also common. The time difference effectively eats away two hours of time available for these relationships.",
+          "section4.map_legend": "Winter (Summer)",
+          "section4.map_attribution": "Map",
+
+          "section5.title": "The clock's divergence from the Sun",
+          "section5.lead": "Following the wrong time zone means the clock time does not correspond to the actual time of day. Most of Finland is ahead of the Sun year-round.",
+          "section5.body1": `Finland's time zone corresponds to the Sun's position in the sky only in the easternmost parts of Finland, and even then only during winter time. The further west you go, the more the clock is ahead of the Sun. Summer time disrupts the situation completely; in summer, Western Finland is 1.5 hours ahead of the Sun.`,
+          "section5.body2": `Living west of a time zone's reference meridian, as in Finland, pushes people to stay up later. The body's natural rhythm follows the movement of the Sun, and on the western edge of a time zone, the Sun sets later according to the clock. This phenomenon is called <strong>social jet-lag</strong>. According to research, it causes various health problems ranging from sleep deprivation to an increased risk of cancer.`,
+          "section5.body3": `Following EU time would have the opposite effect: clocks would run about half an hour behind the Sun. The Sun would set a bit earlier, which would be a nice thing during the bright evenings of summer. It would also rise a bit earlier, which would be an advantage during the dark mornings of winter.`,
+          "section5.body4": "Use the calculator to the side to see what time it should actually be in your city.",
 
           "solar.lead": "Select your nearest city, and the calculator will tell you what the time should actually be.",
           "solar.city_label": "City",
@@ -493,10 +546,9 @@
       function createMeridianMap({ id, center, zoom, meridians = [] }) {
         const map = L.map(id).setView(center, zoom);
 
-        L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
-          subdomains: "abcd",
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
           maxZoom: 20,
-          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
 
         const lines = meridians.map(({ lon, color = "#FF0000" }) =>
@@ -513,7 +565,7 @@
       const map1 = createMeridianMap({
         id: "map1",
         center: [64.5, 23],
-        zoom: 5,
+        zoom: 4,
         meridians: [
           { lon: (isDstInFinland() ? 45 : 30), color: "#FF0000" }
         ]

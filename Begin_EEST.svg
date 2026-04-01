@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- created by Paul Lenz paul@lenz-online.de 25.03.2007 -->
+
+<svg
+   version="1.1"
+   width="250"
+   height="250"
+   id="svg65"
+   sodipodi:docname="Begin_EEST.svg"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs65" />
+  <sodipodi:namedview
+     id="namedview65"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="4.528"
+     inkscape:cx="116.38693"
+     inkscape:cy="125.4417"
+     inkscape:window-width="2560"
+     inkscape:window-height="1378"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg65" />
+  <polyline
+     points="125 11 125 33"
+     stroke="black"
+     stroke-width="6"
+     id="polyline1" />
+  <polyline
+     points="136.92 11.62 135.77 22.56"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline2" />
+  <polyline
+     points="148.7 13.49 146.41 24.25"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline3" />
+  <polyline
+     points="160.23 16.58 156.83 27.04"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline4" />
+  <polyline
+     points="171.37 20.86 166.89 30.9"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline5" />
+  <polyline
+     points="182 26.27 171 45.33"
+     stroke="black"
+     stroke-width="6"
+     id="polyline6" />
+  <polyline
+     points="192.01 32.77 185.54 41.67"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline7" />
+  <polyline
+     points="201.28 40.28 193.92 48.46"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline8" />
+  <polyline
+     points="209.72 48.72 201.54 56.08"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline9" />
+  <polyline
+     points="217.23 57.99 208.33 64.46"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline10" />
+  <polyline
+     points="223.73 68 204.67 79"
+     stroke="black"
+     stroke-width="6"
+     id="polyline11" />
+  <polyline
+     points="229.14 78.63 219.1 83.11"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline12" />
+  <polyline
+     points="233.42 89.77 222.96 93.17"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline13" />
+  <polyline
+     points="236.51 101.3 225.75 103.59"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline14" />
+  <polyline
+     points="238.38 113.08 227.44 114.23"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline15" />
+  <polyline
+     points="239 125 217 125"
+     stroke="black"
+     stroke-width="6"
+     id="polyline16" />
+  <polyline
+     points="238.38 136.92 227.44 135.77"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline17" />
+  <polyline
+     points="236.51 148.7 225.75 146.41"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline18" />
+  <polyline
+     points="233.42 160.23 222.96 156.83"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline19" />
+  <polyline
+     points="229.14 171.37 219.1 166.89"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline20" />
+  <polyline
+     points="223.73 182 204.67 171"
+     stroke="black"
+     stroke-width="6"
+     id="polyline21" />
+  <polyline
+     points="217.23 192.01 208.33 185.54"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline22" />
+  <polyline
+     points="209.72 201.28 201.54 193.92"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline23" />
+  <polyline
+     points="201.28 209.72 193.92 201.54"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline24" />
+  <polyline
+     points="192.01 217.23 185.54 208.33"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline25" />
+  <polyline
+     points="182 223.73 171 204.67"
+     stroke="black"
+     stroke-width="6"
+     id="polyline26" />
+  <polyline
+     points="171.37 229.14 166.89 219.1"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline27" />
+  <polyline
+     points="160.23 233.42 156.83 222.96"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline28" />
+  <polyline
+     points="148.7 236.51 146.41 225.75"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline29" />
+  <polyline
+     points="136.92 238.38 135.77 227.44"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline30" />
+  <polyline
+     points="125 239 125 217"
+     stroke="black"
+     stroke-width="6"
+     id="polyline31" />
+  <polyline
+     points="113.08 238.38 114.23 227.44"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline32" />
+  <polyline
+     points="101.3 236.51 103.59 225.75"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline33" />
+  <polyline
+     points="89.77 233.42 93.17 222.96"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline34" />
+  <polyline
+     points="78.63 229.14 83.11 219.1"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline35" />
+  <polyline
+     points="68 223.73 79 204.67"
+     stroke="black"
+     stroke-width="6"
+     id="polyline36" />
+  <polyline
+     points="57.99 217.23 64.46 208.33"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline37" />
+  <polyline
+     points="48.72 209.72 56.08 201.54"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline38" />
+  <polyline
+     points="40.28 201.28 48.46 193.92"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline39" />
+  <polyline
+     points="32.77 192.01 41.67 185.54"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline40" />
+  <polyline
+     points="26.27 182 45.33 171"
+     stroke="black"
+     stroke-width="6"
+     id="polyline41" />
+  <polyline
+     points="20.86 171.37 30.9 166.89"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline42" />
+  <polyline
+     points="16.58 160.23 27.04 156.83"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline43" />
+  <polyline
+     points="13.49 148.7 24.25 146.41"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline44" />
+  <polyline
+     points="11.62 136.92 22.56 135.77"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline45" />
+  <polyline
+     points="11 125 33 125"
+     stroke="black"
+     stroke-width="6"
+     id="polyline46" />
+  <polyline
+     points="11.62 113.08 22.56 114.23"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline47" />
+  <polyline
+     points="13.49 101.3 24.25 103.59"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline48" />
+  <polyline
+     points="16.58 89.77 27.04 93.17"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline49" />
+  <polyline
+     points="20.86 78.63 30.9 83.11"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline50" />
+  <polyline
+     points="26.27 68 45.33 79"
+     stroke="black"
+     stroke-width="6"
+     id="polyline51" />
+  <polyline
+     points="32.77 57.99 41.67 64.46"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline52" />
+  <polyline
+     points="40.28 48.72 48.46 56.08"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline53" />
+  <polyline
+     points="48.72 40.28 56.08 48.46"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline54" />
+  <polyline
+     points="57.99 32.77 64.46 41.67"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline55" />
+  <polyline
+     points="68 26.27 79 45.33"
+     stroke="black"
+     stroke-width="6"
+     id="polyline56" />
+  <polyline
+     points="78.63 20.86 83.11 30.9"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline57" />
+  <polyline
+     points="89.77 16.58 93.17 27.04"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline58" />
+  <polyline
+     points="101.3 13.49 103.59 24.25"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline59" />
+  <polyline
+     points="113.08 11.62 114.23 22.56"
+     stroke="black"
+     stroke-width="2.5"
+     id="polyline60" />
+  <polyline
+     points="125 125 195 125"
+     stroke="grey"
+     stroke-width="8"
+     id="polyline61" />
+  <polyline
+     points="125 125 125 40"
+     stroke="black"
+     stroke-width="5"
+     id="polyline62" />
+  <polyline
+     points="125 125 195 125"
+     stroke="#000000"
+     stroke-width="8"
+     id="polyline63"
+     inkscape:transform-center-x="-30.310889"
+     transform="rotate(30,125,125)"
+     inkscape:transform-center-y="17.5" />
+  <circle
+     cx="125"
+     cy="125"
+     r="6"
+     id="circle63" />
+  <g
+     id="g65"
+     transform="rotate(40.020595,141.92217,124.08195)">
+    <polyline
+       points="184.38 98.56 185.68 101.71 187.79 108.18 189.20 114.83"
+       fill="none"
+       stroke="#ff0000"
+       stroke-width="2.5"
+       id="polyline64" />
+    <polyline
+       points="189.64 118.21 183.69 112.53 193.47 110.45 189.64 118.21 "
+       fill="#ff0000"
+       stroke="#ff0000"
+       stroke-width="1"
+       id="polyline65" />
+  </g>
+</svg>
