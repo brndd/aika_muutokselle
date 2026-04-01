@@ -116,7 +116,7 @@ html[data-theme="dst"] .badge-theme {
 }
 
 .lead {
-  color: var(--muted);
+  color: var(--ink);
 }
 
 .nav-link {
