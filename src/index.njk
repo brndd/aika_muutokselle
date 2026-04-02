@@ -52,32 +52,12 @@ layout: base.njk
                                 style="height: 600px; border-radius: 1rem; background-image: url('{{ heroMapImage }}');">
                             </div>
                             <div class="map-caption">
-    
-                                <div class="seasonal-copy seasonal-copy--fallback">
-                                    <strong id="hero-map-caption-title">
-                                        {{ t.hero.mapCaptionTitleFallback | safe }}
-                                    </strong>
-                                    <div id="hero-map-caption-body">
-                                        {{ t.hero.mapCaptionBodyFallback | safe }}
-                                    </div>
+                                <strong id="hero-map-caption-title">
+                                    {{ t.hero.mapCaptionTitle | safe }}
+                                </strong>
+                                <div id="hero-map-caption-body">
+                                    {{ t.hero.mapCaptionBody | safe }}
                                 </div>
-                                <div class="seasonal-copy seasonal-copy--winter">
-                                    <strong id="hero-map-caption-title">
-                                        {{ t.hero.mapCaptionTitleWinter | safe }}
-                                    </strong>
-                                    <div id="hero-map-caption-body">
-                                        {{ t.hero.mapCaptionBodyWinter | safe }}
-                                    </div>
-                                </div>
-                                <div class="seasonal-copy seasonal-copy--dst">
-                                    <strong id="hero-map-caption-title">
-                                        {{ t.hero.mapCaptionTitleDst | safe }}
-                                    </strong>
-                                    <div id="hero-map-caption-body">
-                                        {{ t.hero.mapCaptionBodyDst | safe }}
-                                    </div>
-                                </div>
-    
                             </div>
                         </div>
                     </div>

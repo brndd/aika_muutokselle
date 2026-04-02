@@ -68,7 +68,8 @@ const map1 = createMeridianMap({
     center: [64.5, 25],
     zoom: 4,
     meridians: [
-        { lon: (isDstInFinland() ? 45 : 30), color: "#FF0000" }
+        { lon: 30, color: "#FF7700" },
+        { lon: 45, color: "#FF0000" }
     ]
 });
 

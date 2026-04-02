@@ -13,12 +13,8 @@ module.exports = {
             subtitleDst: "Kesäaikaa käytettäessä Suomen kellot ovat Moskovan ajassa — puolitoista tuntia Aurinkoa edellä.",
             subtitleWinter: "Talviaikaa käytettäessä Suomen kellot ovat Pietarin ajassa — puoli tuntia Aurinkoa edellä.",
             subtitleFallback: "Suomen kellot ovat Venäjän ajassa — talvella puoli ja kesällä puolitoista tuntia Aurinkoa edellä.",
-            mapCaptionTitleDst: "Kesäajan nollakohta",
-            mapCaptionTitleWinter: "Talviajan nollakohta",
-            mapCaptionTitleFallback: "Aikavyöhykkeiden nollakohdat",
-            mapCaptionBodyDst: "Punainen viiva näyttää kesäajan aikavyöhykkeen nollakohdan.",
-            mapCaptionBodyWinter: "Punainen viiva näyttää talviajan aikavyöhykkeen nollakohdan.",
-            mapCaptionBodyFallback: "Oranssi viiva näyttää talviajan ja punainen viiva kesäajan nollakohdan.",
+            mapCaptionTitle: "Aikavyöhykkeiden nollakohdat",
+            mapCaptionBody: "Oranssi viiva näyttää talviajan ja punainen viiva kesäajan nollakohdan.",
         },
 
         section1: {
@@ -51,7 +47,7 @@ module.exports = {
         section4: {
             title: "Yhtenäinen EU, yhtenäinen aika",
             lead: "Fiksuinta olisi kuitenkin noudattaa samaa aikavyöhykettä, kuin valtaosa muistakin EU-maista. Suomen liittolaiset ja kauppakumppanit ovat lännessä, UTC+1–vyöhykkeellä.",
-            body1: "UTC+1 on tarkempi, kuin UTC+2 läntisimmissä osissa Suomea — UTC+1,5:n länsipuolella. Turusta itään päin mennessä se alkaa erkanemaan Auringon sijainnista UTC+2:a enemmän. Esimerkiksi Tampere on aikavyöhykkeissä mitattuna UTC+1,58 ja Helsinki +1,66. Keski-Euroopan aikavyöhykkeessä on kuitenkin muita puolia, jotka kompensoivat miinusmerkkistä aikaeroa.",
+            body1: "UTC+1 on tarkempi, kuin UTC+2 läntisimmissä osissa Suomea — UTC+1,5:n länsipuolella. Turusta itään päin mennessä se alkaa erkanemaan Auringon sijainnista UTC+2:a enemmän. Esimerkiksi Tampere on aikavyöhykkeissä mitattuna UTC+1,58 ja Helsinki UTC+1,66. Keski-Euroopan aikavyöhykkeessä on kuitenkin muita puolia, jotka kompensoivat miinusmerkkistä aikaeroa.",
             body2: "Muita EU-maita vastaavan ajan noudattaminen olisi Suomen etu, ja yhtenäinen aikavyöhyke olisi EU:lle kilpailuetu. Nykymallissa suomalaiset konttorit aukeavat ja sulkeutuvat tuntia keskieurooppalaisia vastineitaan aiemmin ja työntekijät lähtevät lounaalle eri aikaan, kuin eurooppalaiset kollegansa. Monikansallisessa talouselämässä tämä lisää päivittäiseen toimintaan turhaa kitkaa ja tekee työpäivien päällekkäisestä osasta kaksi tuntia lyhyemmän.",
             body3: "Nykypäivänä myös rajat ylittävät, etupäässä internetin kautta välittyvät ystävyyssuhteet ovat yleisiä. Aikaero nakertaa näihinkin käytettävästä ajasta käytännössä kaksi tuntia pois.",
             mapLegend: "Talvi (kesä)",
@@ -101,12 +97,8 @@ module.exports = {
             subtitleDst: "During daylight saving time, Finnish clocks follow Moscow time — one and a half hours ahead of the Sun.",
             subtitleWinter: "During winter time, Finnish clocks follow Saint Petersburg time — half an hour ahead of the Sun.",
             subtitleFallback: "Finnish clocks follow Russian time — one and a half hours ahead of the Sun in summer, and half an hour in winter.",
-            mapCaptionTitleDst: "Summer time reference meridian",
-            mapCaptionTitleWinter: "Winter time reference meridian",
-            mapCaptionTitleFallback: "Time zone reference meridians",
-            mapCaptionBodyDst: "The red line shows the reference meridian for the summer time zone.",
-            mapCaptionBodyWinter: "The red line shows the reference meridian for the winter time zone.",
-            mapCaptionBodyFallback: "The orange line shows the winter time reference meridian, and the red line shows the summer time reference meridian.",
+            mapCaptionTitle: "Time zone reference meridians",
+            mapCaptionBody: "The orange line shows the winter time reference meridian, and the red line shows the summer time reference meridian.",
         },
 
         section1: {
@@ -189,12 +181,8 @@ module.exports = {
             subtitleDst: "Under sommartid följer de finländska klockorna Moskvatid — en och en halv timme före solen.",
             subtitleWinter: "Under vintertid följer de finländska klockorna Sankt Petersburg-tid — en halvtimme före solen.",
             subtitleFallback: "De finländska klockorna följer rysk tid — en och en halv timme före solen under sommaren och en halvtimme under vintern.",
-            mapCaptionTitleDst: "Nollmeridian för sommartid",
-            mapCaptionTitleWinter: "Nollmeridian för vintertid",
-            mapCaptionTitleFallback: "Tidszonernas nollmeridianer",
-            mapCaptionBodyDst: "Den röda linjen visar nollmeridianen för sommartidens tidszon.",
-            mapCaptionBodyWinter: "Den röda linjen visar nollmeridianen för vintertidens tidszon.",
-            mapCaptionBodyFallback: "Den orange linjen visar vintertidens nollmeridian och den röda linjen visar sommartidens nollmeridian.",
+            mapCaptionTitle: "Tidszonernas nollmeridianer",
+            mapCaptionBody: "Den orange linjen visar vintertidens nollmeridian och den röda linjen visar sommartidens nollmeridian.",
         },
 
         section1: {
@@ -227,7 +215,7 @@ module.exports = {
         section4: {
             title: "Ett enhetligt EU, en enhetlig tid",
             lead: "Det smartaste vore ändå att följa samma tidszon som majoriteten av de andra EU-länderna. Finlands allierade och handelspartner finns i väst, i UTC+1-zonen.",
-            body1: "UTC+1 är mer exakt än UTC+2 i Finlands västligaste delar — väster om UTC+1,5. Öster om Åbo börjar den avvika mer från solens position än UTC+2. Till exempel motsvarar Tammerfors UTC+1,58 och Helsingfors +1,66 mätt i tidszoner. Den centraleuropeiska tidszonen har dock andra fördelar som kompenserar för den negativa tidsskillnaden.",
+            body1: "UTC+1 är mer exakt än UTC+2 i Finlands västligaste delar — väster om UTC+1,5. Öster om Åbo börjar den avvika mer från solens position än UTC+2. Till exempel motsvarar Tammerfors UTC+1,58 och Helsingfors UTC+1,66 mätt i tidszoner. Den centraleuropeiska tidszonen har dock andra fördelar som kompenserar för den negativa tidsskillnaden.",
             body2: "Att följa samma tid som andra EU-länder vore till Finlands fördel, och en enhetlig tidszon vore en konkurrensfördel för EU. I nuvarande modell öppnar och stänger finländska kontor en timme tidigare än sina centraleuropeiska motsvarigheter, och anställda går på lunch vid andra tider än sina europeiska kollegor. I en internationell ekonomi skapar detta onödig friktion och gör den överlappande delen av arbetsdagen två timmar kortare.",
             body3: "Idag är även gränsöverskridande vänskapsrelationer via internet vanliga. Tidsskillnaden äter i praktiken upp två timmar av den tid som finns tillgänglig för dessa relationer.",
             mapLegend: "Vinter (sommar)",
