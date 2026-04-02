@@ -4,6 +4,7 @@ module.exports = {
             title: "Aika muutokselle",
             description: "Suomessa noudatetaan kesät talvet Venäjän aikaa. Olisiko aika muutokselle?",
             ogImageAlt: "Suomen aikavyöhykekartta",
+            mapInteractionHint: "Klikkaa liikuttaaksesi karttaa",
         },
 
         hero: {
@@ -97,6 +98,7 @@ module.exports = {
             title: "Time for a change",
             description: "Finland follows Russian time year round. Maybe it's time for a change.",
             ogImageAlt: "A map of Finland's time zones",
+            mapInteractionHint: "Click to move the map",
         },
 
         hero: {
@@ -190,6 +192,7 @@ module.exports = {
             title: "Tid för förändring",
             description: "Finland följer rysk tid året runt. Kanske är det tid för förändring.",
             ogImageAlt: "En karta över Finland som visar tidszoner",
+            mapInteractionHint: "Klicka för att styra kartan",
         },
         
         hero: {

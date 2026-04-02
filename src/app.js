@@ -73,7 +73,7 @@ function createMeridianMap({ id, center, zoom, meridians = [] }) {
 
     const overlay = document.createElement("div");
     overlay.className = "map-interaction-hint";
-    overlay.textContent = "Click to interact with the map";
+    overlay.textContent = container.dataset.interactionHint || "Click to interact with the map";
     overlay.setAttribute("aria-hidden", "true");
     container.appendChild(overlay);
 

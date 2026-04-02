@@ -49,7 +49,8 @@ layout: base.njk
                         <div class="position-relative">
                             {% set heroMapImage = '/assets/heromap_static.png' | url %}
                             <div id="map1" class="map-box"
-                                style="height: 600px; border-radius: 1rem; background-image: url('{{ heroMapImage }}');">
+                                style="height: 600px; border-radius: 1rem; background-image: url('{{ heroMapImage }}');"
+                                data-interaction-hint="{{ t.page.mapInteractionHint }}">
                             </div>
                             <div class="map-caption">
                                 <strong id="hero-map-caption-title">
@@ -148,11 +149,12 @@ layout: base.njk
                     {% set map2Image = '/assets/section3map_static.png' | url %}
                     <div class="graphic-box">
                         <div class="seasonal-copy seasonal-copy--fallback">
-                            <img id="zones-map" src="{{ map2Image }}"
-                            alt="{{ t.section3.mapAltText | safe }}" class="w-100" />
+                            <img id="zones-map" src="{{ map2Image }}" alt="{{ t.section3.mapAltText | safe }}"
+                                class="w-100" />
                         </div>
-                        <div id="map2" class="map-box seasonal-copy seasonal-copy--winter seasonal-copy--dst" style="height: 400px; background-image: url('{{ map2Image }}');">
-                        
+                        <div id="map2" class="map-box seasonal-copy seasonal-copy--winter seasonal-copy--dst"
+                            style="height: 400px; background-image: url('{{ map2Image }}');"
+                            data-interaction-hint="{{ t.page.mapInteractionHint }}">
                         </div>
                     </div>
                 </div>
