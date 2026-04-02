@@ -1,0 +1,341 @@
+---
+pagination:
+    data: locales
+    size: 1
+    alias: locale
+permalink: "/{{ locale.lang }}/"
+layout: base.njk
+---
+
+{% set t = translations[locale.lang] %}
+{% set theme = "winter" %}
+{% set pageTitle = t.page.title %}
+{% set pageDescription = t.page.description %}
+{% set pageUrl = site.baseUrl ~ locale.lang ~ "/" %}
+
+{% block content %}
+<main id="top">
+    <section id="current-time" class="hero">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 col-xl-12 text-center">
+    
+                    <div class="seasonal-copy seasonal-copy--fallback">
+                        <h1 id="hero-title" class="display-4 fw-bold">
+                            {{ t.hero.titleFallback | safe }}
+                        </h1>
+                        <p id="hero-subtitle" class="lead fs-5 mt-3">
+                            {{ t.hero.subtitleFallback | safe }}
+                        </p>
+                    </div>
+                    <div class="seasonal-copy seasonal-copy--winter">
+                        <h1 id="hero-title" class="display-4 fw-bold">
+                            {{ t.hero.titleWinter | safe }}
+                        </h1>
+                        <p id="hero-subtitle" class="lead fs-5 mt-3">
+                            {{ t.hero.subtitleWinter | safe }}
+                        </p>
+                    </div>
+                    <div class="seasonal-copy seasonal-copy--dst">
+                        <h1 id="hero-title" class="display-4 fw-bold">
+                            {{ t.hero.titleDst | safe }}
+                        </h1>
+                        <p id="hero-subtitle" class="lead fs-5 mt-3">
+                            {{ t.hero.subtitleDst | safe }}
+                        </p>
+                    </div>
+    
+                    <div class="hero-card card p-2 mt-5">
+                        <div class="position-relative">
+                            {% set heroMapImage = '/assets/heromap_static.png' | url %}
+                            <div id="map1" class="map-box"
+                                style="height: 600px; border-radius: 1rem; background-image: url('{{ heroMapImage }}');">
+                            </div>
+                            <div class="map-caption">
+    
+                                <div class="seasonal-copy seasonal-copy--fallback">
+                                    <strong id="hero-map-caption-title">
+                                        {{ t.hero.mapCaptionTitleFallback | safe }}
+                                    </strong>
+                                    <div id="hero-map-caption-body">
+                                        {{ t.hero.mapCaptionBodyFallback | safe }}
+                                    </div>
+                                </div>
+                                <div class="seasonal-copy seasonal-copy--winter">
+                                    <strong id="hero-map-caption-title">
+                                        {{ t.hero.mapCaptionTitleWinter | safe }}
+                                    </strong>
+                                    <div id="hero-map-caption-body">
+                                        {{ t.hero.mapCaptionBodyWinter | safe }}
+                                    </div>
+                                </div>
+                                <div class="seasonal-copy seasonal-copy--dst">
+                                    <strong id="hero-map-caption-title">
+                                        {{ t.hero.mapCaptionTitleDst | safe }}
+                                    </strong>
+                                    <div id="hero-map-caption-body">
+                                        {{ t.hero.mapCaptionBodyDst | safe }}
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section1" class="section section-alt">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-7 order-lg-1">
+                    <h2 class="section-title fw-bold">{{ t.section1.title | safe }}</h2>
+                    <p class="lead">
+                        {{ t.section1.lead | safe }}
+                    </p>
+                    <p>
+                        {{ t.section1.body1 | safe }}
+                    </p>
+                    <p>
+                        {{ t.section1.body2 | safe }}
+                    </p>
+                </div>
+                <div class="col-lg-5 order-lg-2">
+                    <div class="graphic-box p-0 overflow-hidden">
+                        <img id="zones-map" src="{{ ('/assets/zones_' ~ locale.lang ~ '.png') | url }}"
+                            alt="{{ t.section1.mapAltText | safe }}" class="w-100" />
+                    </div>
+                    <p class="small text-muted mt-2 mb-0 attribution">
+                        {{ t.section1.mapAttribution | safe }}: <a
+                            href="https://commons.wikimedia.org/wiki/File:World_location_map_(equirectangular_180).svg"
+                            target="_blank" rel="noopener noreferrer">Wikimedia Commons</a> / <a
+                            href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank"
+                            rel="noopener noreferrer">CC BY-SA
+                            4.0</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="section2" class="section">
+    <div class="container">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-9 order-lg-2">
+                <h2 class="section-title fw-bold">{{ t.section2.title | safe }}</h2>
+                <p class="lead">
+                    {{ t.section2.lead | safe }}
+                </p>
+                <p>
+                    {{ t.section2.body1 | safe }}
+                </p>
+                <p>
+                    {{ t.section2.body2 | safe }}
+                </p>
+                <p>
+                    {{ t.section2.body3 | safe }}
+                </p>
+            </div>
+            <div class="col-lg-3 order-lg-1">
+                <div class="graphic-box p-0 overflow-hidden">
+                    <img id="begin-eest" src="{{ '/assets/Begin_EEST.svg' | url }}" alt="{{ t.section2.imageAlt | safe }}" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="section3" class="section section-alt">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-7 order-lg-1">
+                    <h2 class="section-title fw-bold">{{ t.section3.title | safe }}</h2>
+                    <p class="lead">
+                        {{ t.section3.lead | safe }}
+                    </p>
+                    <p>
+                        {{ t.section3.body1 | safe }}
+                    </p>
+                    <p>
+                        {{ t.section3.body2 | safe }}
+                    </p>
+                    <p>
+                        {{ t.section3.body3 | safe }}
+                    </p>
+                </div>
+                <div class="col-lg-5 order-lg-2">
+                    {% set map2Image = '/assets/section3map_static.png' | url %}
+                    <div class="graphic-box">
+                        <div class="seasonal-copy seasonal-copy--fallback">
+                            <img id="zones-map" src="{{ map2Image }}"
+                            alt="{{ t.section3.mapAltText | safe }}" class="w-100" />
+                        </div>
+                        <div id="map2" class="map-box seasonal-copy seasonal-copy--winter seasonal-copy--dst" style="height: 400px; background-image: url('{{ map2Image }}');">
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section4" class="section">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-7 order-lg-2">
+                    <h2 class="section-title fw-bold">{{ t.section4.title | safe }}</h2>
+                    <p class="lead">
+                        {{ t.section4.lead | safe }}
+                    </p>
+                    <p>
+                        {{ t.section4.body1 | safe }}
+                    </p>
+                    <p>
+                        {{ t.section4.body2 | safe }}
+                    </p>
+                    <p>
+                        {{ t.section4.body3 | safe }}
+                    </p>
+                </div>
+                <div class="col-lg-5 order-lg-1">
+                    <div class="graphic-box p-0 overflow-hidden position-relative">
+                        <img src="{{ '/assets/europe_zones.png' | url }}" alt="{{ t.section4.mapAltText | safe }}" class="w-100"/>
+    
+                        <div class="map-legend">
+                            <div class="fw-bold mb-2">{{ t.section4.mapLegend }}</div>
+                            <div class="legend-item">
+                                <span class="legend-swatch" style="background:#c0bffd;"></span>
+                                UTC+0
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-swatch" style="background:#5f61bf;"></span>
+                                UTC+0 (UTC+1)
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-swatch" style="background:#c15f61;"></span>
+                                UTC+1 (UTC+2)
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-swatch" style="background:#d7d65c;"></span>
+                                UTC+2 (UTC+3)
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-swatch" style="background:#f7f689"></span>
+                                UTC+2
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-swatch" style="background:#a5ffa5;"></span>
+                                UTC+3
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-swatch" style="background:#a6ecf2;"></span>
+                                UTC+4
+                            </div>
+                        </div>
+                    </div>
+                    <p class="small text-muted mt-2 mb-0 attribution">
+                        {{ t.section4.mapAttribution }}: <a
+                            href="https://commons.wikimedia.org/wiki/File:Time_zones_of_the_Greater_Europe.svg"
+                            target="_blank" rel="noopener noreferrer">Wikimedia Commons</a> / <a
+                            href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank"
+                            rel="noopener noreferrer">CC BY-SA 4.0</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section5" class="section section-alt">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-7 order-lg-1">
+                    <h2 class="section-title fw-bold">{{ t.section5.title | safe }}</h2>
+                    <p class="lead">
+                        {{ t.section5.lead | safe }}
+                    </p>
+                    <p>
+                        {{ t.section5.body1 | safe }}
+                    </p>
+                    <p>
+                        {{ t.section5.body2 | safe }}
+                    </p>
+                    <p>
+                        {{ t.section5.body3 | safe }}
+                    </p>
+                    <p>
+                        {{ t.section5.body4 | safe }}
+                    </p>
+                </div>
+                <div class="col-lg-5 order-lg-2">
+                    <div class="card h-100">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <p class="lead">{{ t.solar.lead | safe }}</p>
+
+                            <label for="solar-city" class="form-label">{{ t.solar.cityLabel | safe }}</label>
+                            <select id="solar-city" class="form-select mb-3"></select>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <p>{{ t.solar.realzoneLabel | safe }}: <strong><span id="solar-realzone">UTC+0.00</span></strong></p>
+                                </div>
+                            </div>
+
+                            <div class="row g-3 align-items-stretch">
+                                <div class="col-md-4">
+                                    <div class="p-3 rounded-3 border bg-white h-100 solar-time-box">
+                                        <div class="small text-muted solar-label">{{ t.solar.legalLabel | safe }}</div>
+                                        <div id="solar-legal" class="solar-time-value">--:--:--</div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="p-3 rounded-3 border bg-white h-100 solar-time-box">
+                                        <div class="small text-muted solar-label">{{ t.solar.meanLabel | safe }}</div>
+                                        <div id="solar-mean" class="solar-time-value">--:--:--</div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="p-3 rounded-3 border bg-white h-100 solar-time-box">
+                                        <div class="small text-muted solar-label">{{ t.solar.apparentLabel | safe }}</div>
+                                        <div id="solar-apparent" class="solar-time-value">--:--:--</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="small text-muted mt-3 mb-0">
+                                {{ t.solar.note1 | safe }}
+                            </p>
+                            <p class="small text-muted mt-3 mb-0">
+                                {{ t.solar.note2 | safe }}
+                            </p>
+                            <p class="small text-muted mt-3 mb-0">
+                                {{ t.solar.note3 | safe }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <hr />
+            <p class="mb-0 mt-2 small">
+                {{ t.footer.contact | safe }}: <a href="mailto:{{ site.contactEmail }}">{{ site.contactEmail }}</a>
+            </p>
+            <p class="mb-0 mt-2 small">
+                <a href="{{ site.githubRepo }}">{{ t.footer.source | safe }}</a>
+                {{ t.footer.copyright | safe }}
+                <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a><img
+                    src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""
+                    style="max-width: 1em;max-height:1em;margin-left: .2em;"><img
+                    src="https://mirrors.creativecommons.org/presskit/icons/zero.svg" alt=""
+                    style="max-width: 1em;max-height:1em;margin-left: .2em;">
+            </p>
+        </div>
+    </footer>
+</main>
+{% endblock %}

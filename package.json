@@ -1,0 +1,25 @@
+{
+  "name": "aika_muutokselle",
+  "version": "1.0.0",
+  "description": "This is a PSA/pamphlet type website whose purpose is to inform Finnish people about the physical realities of time zones and advocate for transitioning to UTC+1 or UTC+1.5 to closer match Finland's geography and political ties to the EU.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "eleventy",
+    "serve": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brndd/aika_muutokselle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brndd/aika_muutokselle/issues"
+  },
+  "homepage": "https://github.com/brndd/aika_muutokselle#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.5"
+  }
+}
