@@ -45,7 +45,15 @@ function isDstInFinland(date = new Date()) {
 */
 
 function createMeridianMap({ id, center, zoom, meridians = [] }) {
-    const map = L.map(id).setView(center, zoom);
+    const map = L.map(id, {
+        scrollWheelZoom: false,
+        dragging: false,
+        touchZoom: false,
+        doubleClickZoom: false,
+        boxZoom: false,
+        keyboard: false,
+        tap: false
+    }).setView(center, zoom);
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         maxZoom: 20,
@@ -59,6 +67,89 @@ function createMeridianMap({ id, center, zoom, meridians = [] }) {
             dashArray: "8 8"
         }).addTo(map)
     );
+
+    const container = map.getContainer();
+    container.tabIndex = 0;
+
+    const overlay = document.createElement("div");
+    overlay.className = "map-interaction-hint";
+    overlay.textContent = "Click to interact with the map";
+    overlay.setAttribute("aria-hidden", "true");
+    container.appendChild(overlay);
+
+    let overlayTimer = null;
+    let interactionEnabled = false;
+
+    function showOverlay() {
+        if (interactionEnabled) return;
+
+        overlay.classList.add("is-visible");
+
+        if (overlayTimer) clearTimeout(overlayTimer);
+        overlayTimer = setTimeout(() => {
+            overlay.classList.remove("is-visible");
+        }, 2500);
+    }
+
+    function enableInteraction() {
+        if (interactionEnabled) return;
+
+        interactionEnabled = true;
+        map.dragging.enable();
+        map.touchZoom.enable();
+        map.doubleClickZoom.enable();
+        map.scrollWheelZoom.enable();
+        map.boxZoom.enable();
+        map.keyboard.enable();
+
+        overlay.classList.remove("is-visible");
+        if (overlayTimer) {
+            clearTimeout(overlayTimer);
+            overlayTimer = null;
+        }
+    }
+
+    function disableInteraction() {
+        if (!interactionEnabled) return;
+
+        interactionEnabled = false;
+        map.dragging.disable();
+        map.touchZoom.disable();
+        map.doubleClickZoom.disable();
+        map.scrollWheelZoom.disable();
+        map.boxZoom.disable();
+        map.keyboard.disable();
+    }
+
+    function handleDocumentPointerDown(e) {
+        if (!container.contains(e.target)) {
+            disableInteraction();
+        }
+    }
+
+    function handleDocumentWheel(e) {
+        if (!container.contains(e.target)) {
+            disableInteraction();
+        }
+    }
+
+    container.addEventListener("wheel", showOverlay, { passive: true });
+    container.addEventListener("touchstart", showOverlay, { passive: true });
+
+    container.addEventListener("click", enableInteraction);
+    container.addEventListener("focusin", enableInteraction);
+
+    document.addEventListener("pointerdown", handleDocumentPointerDown);
+    document.addEventListener("wheel", handleDocumentWheel, { passive: true });
+
+    container.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+            disableInteraction();
+            container.blur();
+        }
+    });
+    
+    disableInteraction();
 
     return { map, lines };
 }
