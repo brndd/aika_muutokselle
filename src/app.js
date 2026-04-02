@@ -199,26 +199,35 @@ function initShareButton() {
     const statusCopied = button.dataset.statusCopied || "Link copied to clipboard.";
     const statusUnsupported = button.dataset.statusUnsupported || "Sharing is not supported in this browser.";
 
-    async function copyToClipboard(value) {
-        if (navigator.clipboard?.writeText) {
-            await navigator.clipboard.writeText(value);
-            return true;
+    let statusTimer = null;
+
+    function setStatus(message, clearAfterMs = 3000) {
+        if (!status) return;
+
+        status.textContent = message;
+
+        if (statusTimer) {
+            clearTimeout(statusTimer);
+            statusTimer = null;
         }
 
-        const textarea = document.createElement("textarea");
-        textarea.value = value;
-        textarea.setAttribute("readonly", "");
-        textarea.style.position = "absolute";
-        textarea.style.left = "-9999px";
-        document.body.appendChild(textarea);
-        textarea.select();
+        if (clearAfterMs > 0) {
+            statusTimer = setTimeout(() => {
+                status.textContent = "";
+                statusTimer = null;
+            }, clearAfterMs);
+        }
+    }
+
+    async function copyToClipboard(value) {
+        if (!navigator.clipboard?.writeText) {
+            return false;
+        }
 
         try {
-            const ok = document.execCommand("copy");
-            document.body.removeChild(textarea);
-            return ok;
+            await navigator.clipboard.writeText(value);
+            return true;
         } catch {
-            document.body.removeChild(textarea);
             return false;
         }
     }
@@ -226,27 +235,20 @@ function initShareButton() {
     button.hidden = false;
 
     button.addEventListener("click", async () => {
-        try {
-            if (navigator.share) {
-                await navigator.share({ title, text, url });
-                if (status) status.textContent = statusShared;
-                return;
-            }
-
-            const copied = await copyToClipboard(url);
-            if (status) {
-                status.textContent = copied ? statusCopied : statusUnsupported;
-            }
-        } catch {
+        if (navigator.share) {
             try {
-                const copied = await copyToClipboard(url);
-                if (status) {
-                    status.textContent = copied ? statusCopied : statusUnsupported;
+                await navigator.share({ title, text, url });
+                setStatus(statusShared);
+                return;
+            } catch (error) {
+                if (error?.name === "AbortError") {
+                    return;
                 }
-            } catch {
-                if (status) status.textContent = statusUnsupported;
             }
         }
+
+        const copied = await copyToClipboard(url);
+        setStatus(copied ? statusCopied : statusUnsupported);
     });
 }
 
