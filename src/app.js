@@ -186,3 +186,68 @@ function initSolarTimeWidget() {
 }
 
 initSolarTimeWidget();
+
+function initShareButton() {
+    const button = document.getElementById("share-button");
+    const status = document.getElementById("share-status");
+    if (!button) return;
+
+    const title = button.dataset.shareTitle || document.title;
+    const text = button.dataset.shareText || "";
+    const url = button.dataset.shareUrl || window.location.href;
+    const statusShared = button.dataset.statusShared || "Shared.";
+    const statusCopied = button.dataset.statusCopied || "Link copied to clipboard.";
+    const statusUnsupported = button.dataset.statusUnsupported || "Sharing is not supported in this browser.";
+
+    async function copyToClipboard(value) {
+        if (navigator.clipboard?.writeText) {
+            await navigator.clipboard.writeText(value);
+            return true;
+        }
+
+        const textarea = document.createElement("textarea");
+        textarea.value = value;
+        textarea.setAttribute("readonly", "");
+        textarea.style.position = "absolute";
+        textarea.style.left = "-9999px";
+        document.body.appendChild(textarea);
+        textarea.select();
+
+        try {
+            const ok = document.execCommand("copy");
+            document.body.removeChild(textarea);
+            return ok;
+        } catch {
+            document.body.removeChild(textarea);
+            return false;
+        }
+    }
+
+    button.hidden = false;
+
+    button.addEventListener("click", async () => {
+        try {
+            if (navigator.share) {
+                await navigator.share({ title, text, url });
+                if (status) status.textContent = statusShared;
+                return;
+            }
+
+            const copied = await copyToClipboard(url);
+            if (status) {
+                status.textContent = copied ? statusCopied : statusUnsupported;
+            }
+        } catch {
+            try {
+                const copied = await copyToClipboard(url);
+                if (status) {
+                    status.textContent = copied ? statusCopied : statusUnsupported;
+                }
+            } catch {
+                if (status) status.textContent = statusUnsupported;
+            }
+        }
+    });
+}
+
+initShareButton();

@@ -76,6 +76,15 @@ module.exports = {
             realzoneLabel: "Todellinen aikavyöhyke",
         },
 
+        share: {
+            title: "Levitä sanaa",
+            lead: "Moni ei tule ajatelleeksi, miten aikavyöhykkeet käytännössä toimivat. Jos pidit sivun sanomasta, jaa se eteenpäin!",
+            label: "Jaa tämä sivu",
+            statusShared: "Jaettu.",
+            statusCopied: "Linkki kopioitu leikepöydälle.",
+            statusUnsupported: "Selain ei tue jakamista 😢",
+        },
+
         footer: {
             contact: "Yhteydenotot",
             source: "Lähdekoodi saatavilla GitHubissa.",
@@ -160,6 +169,15 @@ module.exports = {
             realzoneLabel: "True timezone",
         },
 
+        share: {
+            title: "Spread the word",
+            lead: "Many people don't realize how time zones actually work in practice. If you support the message of this page, please share it!",
+            label: "Share this page",
+            statusShared: "Shared.",
+            statusCopied: "Link copied to clipboard.",
+            statusUnsupported: "Your browser doesn't support sharing 😢",
+        },
+
         footer: {
             contact: "Contact",
             source: "Source code is available on GitHub.",
@@ -242,6 +260,15 @@ module.exports = {
             note2: "Sann soltid är den tid som motsvarar solens faktiska position; den tid som ett solur skulle visa.",
             note3: "På grund av jordens excentriska bana och jordaxelns lutning motsvarar medelsoltiden den sanna soltiden endast fyra gånger om året. Under normalår infaller dessa dagar den 15.4, 13.6, 1.9 och 25.12.",
             realzoneLabel: "Rätt tidszon",
+        },
+
+        share: {
+            title: "Sprid ordet",
+            lead: "Många tänker inte på hur tidszoner fungerar i praktiken. Om du gillar sidans budskap, dela den vidare!",
+            label: "Dela denna sida",
+            statusShared: "Delad.",
+            statusCopied: "Länken kopierad till urklipp.",
+            statusUnsupported: "Webbläsaren stöder inte delning 😢",
         },
 
         footer: {

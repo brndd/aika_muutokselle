@@ -300,6 +300,26 @@ layout: base.njk
         </div>
     </section>
 
+    <section id="section-share" class="section pb-0">
+        <div class="container">
+            <div class="row justify-items-center text-center">
+                <div class="col-lg-12">
+                    <h2 class="section-title fw-bold">{{ t.share.title | safe }}</h2>
+                    <p class="lead">{{ t.share.lead | safe }}</p>
+                    <div class="mt-4">
+                        <button id="share-button" type="button" class="btn btn-outline-primary btn-sm" data-share-title="{{ t.page.title }}"
+                            data-share-text="{{ t.page.description }}" data-share-url="{{ pageUrl }}"
+                            data-status-shared="{{ t.share.statusShared }}" data-status-copied="{{ t.share.statusCopied }}"
+                            data-status-unsupported="{{ t.share.statusUnsupported }}" hidden>
+                            {{ t.share.label or "Share this page" }}
+                        </button>
+                        <div id="share-status" class="small text-muted mt-2" aria-live="polite"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="container">
             <hr />
