@@ -214,3 +214,7 @@ html[data-theme="dst"] .lang-btn.active {
   font-weight: 700;
   line-height: 1;
 }
+
+.share-status {
+    min-height: 1.5em;
+}
