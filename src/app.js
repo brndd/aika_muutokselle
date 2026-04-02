@@ -68,7 +68,7 @@ const map1 = createMeridianMap({
     center: [64.5, 25],
     zoom: 4,
     meridians: [
-        { lon: 30, color: "#FF7700" },
+        { lon: 30, color: "#0000FF" },
         { lon: 45, color: "#FF0000" }
     ]
 });

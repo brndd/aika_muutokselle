@@ -14,7 +14,7 @@ module.exports = {
             subtitleWinter: "Talviaikaa käytettäessä Suomen kellot ovat Pietarin ajassa — puoli tuntia Aurinkoa edellä.",
             subtitleFallback: "Suomen kellot ovat Venäjän ajassa — talvella puoli ja kesällä puolitoista tuntia Aurinkoa edellä.",
             mapCaptionTitle: "Aikavyöhykkeiden nollakohdat",
-            mapCaptionBody: "Oranssi viiva näyttää talviajan ja punainen viiva kesäajan nollakohdan.",
+            mapCaptionBody: "Sininen viiva näyttää talviajan ja punainen viiva kesäajan nollakohdan.",
         },
 
         section1: {
@@ -107,7 +107,7 @@ module.exports = {
             subtitleWinter: "During winter time, Finnish clocks follow Saint Petersburg time — half an hour ahead of the Sun.",
             subtitleFallback: "Finnish clocks follow Russian time — one and a half hours ahead of the Sun in summer, and half an hour in winter.",
             mapCaptionTitle: "Time zone reference meridians",
-            mapCaptionBody: "The orange line shows the winter time reference meridian, and the red line shows the summer time reference meridian.",
+            mapCaptionBody: "The blue line shows the winter time reference meridian, and the red line shows the summer time reference meridian.",
         },
 
         section1: {
@@ -200,7 +200,7 @@ module.exports = {
             subtitleWinter: "Under vintertid följer de finländska klockorna Sankt Petersburg-tid — en halvtimme före solen.",
             subtitleFallback: "De finländska klockorna följer rysk tid — en och en halv timme före solen under sommaren och en halvtimme under vintern.",
             mapCaptionTitle: "Tidszonernas nollmeridianer",
-            mapCaptionBody: "Den orange linjen visar vintertidens nollmeridian och den röda linjen visar sommartidens nollmeridian.",
+            mapCaptionBody: "Den blå linjen visar vintertidens nollmeridian och den röda linjen visar sommartidens nollmeridian.",
         },
 
         section1: {
