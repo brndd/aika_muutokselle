@@ -60,7 +60,7 @@ module.exports = {
             title: "Kellonajan erkaneminen Auringosta",
             lead: "Väärän aikavyöhykkeen noudattaminen tarkoittaa, ettei kellonaika vastaa varsinaista päivänaikaa. Valtaosa Suomesta on ympärivuotisesti Aurinkoa edellä.",
             body1: "Suomen aikavyöhyke vastaa Auringon sijaintia taivaalla ainoastaan aivan Suomen itäisimmissä osissa ja sielläkin vain talviajassa. Mitä lännemmäksi mennään, sitä enemmän kello on Aurinkoa edellä. Kesäaika sotkee tilanteen täysin; kesällä Länsi-Suomi on 1,5 tuntia Aurinkoa edellä.",
-            body2: "Aikavyöhykkeen nollakohdan länsipuolella eläminen, kuten Suomessa, ajaa ihmisiä valvomaan myöhempään. Kehon luontainen rytmi seuraa Auringon liikettä, ja aikavyöhykkeen länsireunalla Aurinko laskee kellotaulun mukaan myöhemmin. Ilmiötä kutsutaan <strong>sosiaaliseksi aikaerorasitukseksi</strong> (<em>social jet-lag</em>). Tutkimustiedon mukaan se aiheuttaa monenlaisia terveyshaittoja univajeesta kohonneeseen syöpäriskiin.",
+            body2: "Kehon luontainen rytmi seuraa Auringon liikettä, ja aikavyöhykkeen nollakohdan läntisellä puolella, kuten Suomessa, Aurinko nousee ja laskee kellon mukaan myöhemmin. Tällöin ihmiset tapaavat valvoa myöhempään ja joutuvat heräämään, kun kehon mielestä on vielä yö. Tämä irtauttaa kehon sisäisen kellon sosiaalisesta aikataulustamme. Ilmiötä kutsutaan <strong>sosiaaliseksi aikaerorasitukseksi</strong> (<em>social jet-lag</em>).{{cite:1}} Tutkimustiedon mukaan se aiheuttaa monenlaisia terveyshaittoja univajeesta kohonneeseen syöpäriskiin.{{cite:2}}",
             body3: "EU-ajan seuraamisella olisi päinvastainen vaikutus: kellot kulkisivat puolisen tuntia Aurinkoa jäljessä. Aurinko laskisi hieman aiemmin, joka kesän valoisina iltoina on vain toivottavaa. Se myös nousisi hieman aiemmin, joka olisi eduksi talven pimeinä aamuina.",
             body4: "Katso vierestä löytyvästä laskurista, paljonko kello oikeasti kaupungissasi on.",
         },
@@ -84,6 +84,10 @@ module.exports = {
             statusShared: "Jaettu.",
             statusCopied: "Linkki kopioitu leikepöydälle.",
             statusUnsupported: "Selain ei tue jakamista 😢",
+        },
+
+        references: {
+            title: "Viitteet",
         },
 
         footer: {
@@ -154,7 +158,7 @@ module.exports = {
             title: "The clock's divergence from the Sun",
             lead: "Following the wrong time zone means the clock time does not correspond to the actual time of day. Most of Finland is ahead of the Sun year-round.",
             body1: "Finland's time zone corresponds to the Sun's position in the sky only in the easternmost parts of Finland, and even then only during winter time. The further west you go, the more the clock is ahead of the Sun. Summer time disrupts the situation completely; in summer, Western Finland is 1.5 hours ahead of the Sun.",
-            body2: "Living west of a time zone's reference meridian, as in Finland, pushes people to stay up later. The body's natural rhythm follows the movement of the Sun, and on the western edge of a time zone, the Sun sets later according to the clock. This phenomenon is called <strong>social jet-lag</strong>. According to research, it causes various health problems ranging from sleep deprivation to an increased risk of cancer.",
+            body2: "The body's natural rhythm follows the movement of the Sun, and on the western edge of a timezone, such as in Finland, the Sun rises and sets later according to the clock. This pushes people to stay up later and forces them to wake up when their bodies think it's still night. This causes the body's internal clock to drift out of sync with our daily schedule in a phenomenon called <strong>social jet-lag</strong>.{{cite:1}} According to research, it causes various health problems ranging from sleep deprivation to an increased risk of cancer.{{cite:2}}",
             body3: "Following EU time would have the opposite effect: clocks would run about half an hour behind the Sun. The Sun would set a bit earlier, which would be a nice thing during the bright evenings of summer. It would also rise a bit earlier, which would be an advantage during the dark mornings of winter.",
             body4: "Use the calculator to the side to see what time it should actually be in your city.",
         },
@@ -178,6 +182,10 @@ module.exports = {
             statusShared: "Shared.",
             statusCopied: "Link copied to clipboard.",
             statusUnsupported: "Your browser doesn't support sharing 😢",
+        },
+
+        references: {
+            title: "References",
         },
 
         footer: {
@@ -248,7 +256,7 @@ module.exports = {
             title: "Klockans avvikelse från solen",
             lead: "Att följa fel tidszon innebär att klocktiden inte motsvarar den faktiska tiden på dygnet. Största delen av Finland ligger året runt före solen.",
             body1: "Finlands tidszon motsvarar solens position på himlen endast i de östligaste delarna av landet, och även då endast under vintertid. Ju längre västerut man kommer, desto mer ligger klockan före solen. Sommartiden rör till det helt; på sommaren ligger västra Finland 1,5 timme före solen.",
-            body2: "Att bo väster om en tidszons nollmeridian, som i Finland, driver människor till att vaka senare. Kroppens naturliga rytm följer solens rörelse, och vid tidszonens västra kant går solen ner senare enligt klockan. Fenomenet kallas <strong>social jetlag</strong>. Enligt forskning orsakar det diverse hälsoproblem, från sömnbrist till ökad cancerrisk.",
+            body2: "Kroppens naturliga rytm följer solens rörelse, och på den västra sidan av en tidszons nollmeridian, som i Finland, går solen upp och ner senare enligt klockan. Detta gör att människor tenderar att vaka senare och tvingas vakna medan kroppen anser att det fortfarande är natt. Detta får kroppens inre klocka att hamna i otakt med vårt sociala schema, ett fenomen som kallas <strong>social jetlag</strong>.{{cite:1}} Enligt forskning orsakar detta diverse hälsoproblem, allt från sömnbrist till en ökad risk för cancer.{{cite:2}}",
             body3: "Att följa EU-tid skulle ha motsatt effekt: klockorna skulle gå ungefär en halvtimme efter solen. Solen skulle gå ner något tidigare, vilket bara är önskvärt under sommarens ljusa kvällar. Den skulle också gå upp något tidigare, vilket vore en fördel under vinterns mörka morgnar.",
             body4: "Se i räknaren intill vad klockan egentligen borde vara i din stad.",
         },
@@ -272,6 +280,10 @@ module.exports = {
             statusShared: "Delad.",
             statusCopied: "Länken kopierad till urklipp.",
             statusUnsupported: "Webbläsaren stöder inte delning 😢",
+        },
+
+        references: {
+            title: "Källor",
         },
 
         footer: {

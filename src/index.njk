@@ -73,13 +73,13 @@ layout: base.njk
                 <div class="col-lg-7 order-lg-1">
                     <h2 class="section-title fw-bold">{{ t.section1.title | safe }}</h2>
                     <p class="lead">
-                        {{ t.section1.lead | safe }}
+                        {{ t.section1.lead | citations | safe }}
                     </p>
                     <p>
-                        {{ t.section1.body1 | safe }}
+                        {{ t.section1.body1 | citations | safe }}
                     </p>
                     <p>
-                        {{ t.section1.body2 | safe }}
+                        {{ t.section1.body2 | citations | safe }}
                     </p>
                 </div>
                 <div class="col-lg-5 order-lg-2">
@@ -106,16 +106,16 @@ layout: base.njk
             <div class="col-lg-9 order-lg-2">
                 <h2 class="section-title fw-bold">{{ t.section2.title | safe }}</h2>
                 <p class="lead">
-                    {{ t.section2.lead | safe }}
+                    {{ t.section2.lead | citations | safe }}
                 </p>
                 <p>
-                    {{ t.section2.body1 | safe }}
+                    {{ t.section2.body1 | citations | safe }}
                 </p>
                 <p>
-                    {{ t.section2.body2 | safe }}
+                    {{ t.section2.body2 | citations | safe }}
                 </p>
                 <p>
-                    {{ t.section2.body3 | safe }}
+                    {{ t.section2.body3 | citations | safe }}
                 </p>
             </div>
             <div class="col-lg-3 order-lg-1">
@@ -133,16 +133,16 @@ layout: base.njk
                 <div class="col-lg-7 order-lg-1">
                     <h2 class="section-title fw-bold">{{ t.section3.title | safe }}</h2>
                     <p class="lead">
-                        {{ t.section3.lead | safe }}
+                        {{ t.section3.lead | citations | safe }}
                     </p>
                     <p>
-                        {{ t.section3.body1 | safe }}
+                        {{ t.section3.body1 | citations | safe }}
                     </p>
                     <p>
-                        {{ t.section3.body2 | safe }}
+                        {{ t.section3.body2 | citations | safe }}
                     </p>
                     <p>
-                        {{ t.section3.body3 | safe }}
+                        {{ t.section3.body3 | citations | safe }}
                     </p>
                 </div>
                 <div class="col-lg-5 order-lg-2">
@@ -168,16 +168,16 @@ layout: base.njk
                 <div class="col-lg-7 order-lg-2">
                     <h2 class="section-title fw-bold">{{ t.section4.title | safe }}</h2>
                     <p class="lead">
-                        {{ t.section4.lead | safe }}
+                        {{ t.section4.lead | citations | safe }}
                     </p>
                     <p>
-                        {{ t.section4.body1 | safe }}
+                        {{ t.section4.body1 | citations | safe }}
                     </p>
                     <p>
-                        {{ t.section4.body2 | safe }}
+                        {{ t.section4.body2 | citations | safe }}
                     </p>
                     <p>
-                        {{ t.section4.body3 | safe }}
+                        {{ t.section4.body3 | citations | safe }}
                     </p>
                 </div>
                 <div class="col-lg-5 order-lg-1">
@@ -234,19 +234,19 @@ layout: base.njk
                 <div class="col-lg-7 order-lg-1">
                     <h2 class="section-title fw-bold">{{ t.section5.title | safe }}</h2>
                     <p class="lead">
-                        {{ t.section5.lead | safe }}
+                        {{ t.section5.lead | citations | safe }}
                     </p>
                     <p>
-                        {{ t.section5.body1 | safe }}
+                        {{ t.section5.body1 | citations | safe }}
                     </p>
                     <p>
-                        {{ t.section5.body2 | safe }}
+                        {{ t.section5.body2 | citations | safe }}
                     </p>
                     <p>
-                        {{ t.section5.body3 | safe }}
+                        {{ t.section5.body3 | citations | safe }}
                     </p>
                     <p>
-                        {{ t.section5.body4 | safe }}
+                        {{ t.section5.body4 | citations | safe }}
                     </p>
                 </div>
                 <div class="col-lg-5 order-lg-2">
@@ -302,7 +302,7 @@ layout: base.njk
         </div>
     </section>
 
-    <section id="section-share" class="section pb-0">
+    <section id="section-share" class="section">
         <div class="container">
             <div class="row justify-items-center text-center">
                 <div class="col-lg-12">
@@ -322,7 +322,33 @@ layout: base.njk
         </div>
     </section>
 
-    <footer>
+    <section id="section-references" class="section section-alt">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>{{ t.references.title }}</h2>
+                    <ol class="references">
+                        <li id="cite-1">
+                            Bonmatí-Carrión MÁ, Casado-Ramirez E, Moreno-Casbas MT, Campos M, ModulEN Consortium, Madrid JA,
+                            Rol MA.
+                            <i>Living at the Wrong Time: Effects of Unmatching Official Time in Portugal and Western
+                                Spain</i>.
+                            <i>Biology (Basel)</i>. 2022.
+                            <a href="https://doi.org/10.3390/biology11081130">doi:10.3390/biology11081130</a>. <a href="#ref-1">↩</a>
+                        </li>
+                        <li id="cite-2">
+                            Gu F, Xu S, Devesa SS, Zhang F, Klerman EB, Graubard BI, Caporaso NE.
+                            <i>Longitude Position in a Time Zone and Cancer Risk in the United States</i>.
+                            <i>Cancer Epidemiol Biomarkers Prev</i>. 2017.
+                            <a href="https://doi.org/10.1158/1055-9965.EPI-16-1029">doi:10.1158/1055-9965.EPI-16-1029</a>. <a href="#ref-2">↩</a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pt-0">
         <div class="container">
             <hr />
             <p class="mb-0 mt-2 small">

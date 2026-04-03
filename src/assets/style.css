@@ -241,3 +241,18 @@ html[data-theme="dst"] .lang-btn.active {
 .share-status {
     min-height: 1.5em;
 }
+
+.citation-ref {
+  font-size: 0.65rem;
+  vertical-align: super;
+  line-height: 0;
+  margin-left: 0.1em;
+}
+
+.citation-ref a {
+  text-decoration: none;
+}
+
+.references {
+  font-size: 0.95rem;
+}
