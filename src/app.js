@@ -170,7 +170,8 @@ const map2 = createMeridianMap({
     zoom: 5,
     meridians: [
         { lon: 26.25, color: "#888" },
-        { lon: 22.5, color: "#FF0000" }
+        { lon: 22.5, color: "#0000FF" },
+        { lon: 30, color: "#FF0000"}
     ]
 });
 

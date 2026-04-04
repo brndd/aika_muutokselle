@@ -41,14 +41,14 @@ module.exports = {
             lead: "Kaikista parhaiten Suomen maantieteellistä sijaintia vastaisi puolituntinen aikavyöhyke, UTC+1,5. Tällöin Suomi olisi puoli tuntia Ruotsia edellä.",
             body1: "UTC+1,5:n nollakohta kulkee 22,5°E pituuspiirin myötäisesti hieman Turun itäpuolella. Se on tarkempi, kuin UTC+2 osapuilleen Kouvolaa läntisemmässä Suomessa.",
             body2: "Puolituntiset aikavyöhykkeet ovat epätavallisia, mutta eivät ennenkuulumattomia; sellaista seurataan mm. Kanadassa, Intiassa ja Australiassa.",
-            body3: "Vierestä löytyvässä kartassa punainen katkoviiva näyttää UTC+1,5:n nollakohdan ja harmaa katkoviiva kohdan, jonka länsipuolella UTC+1,5 on tarkempi, kuin UTC+2. Noin 80 % Suomen väestöstä asuu harmaan viivan länsipuolella.",
-            mapAltText: "Kartta Suomesta. Punainen katkoviiva kulkee 22,5°E pituuspiirin mukaisesti hieman Turun itäpuolella. Harmaa katkoviiva kulkee 26,25°E pituuspiirin mukaisesti Lahden ja Kouvolan välistä."
+            body3: "Vierestä löytyvässä kartassa sininen katkoviiva näyttää UTC+1,5:n nollakohdan, punainen katkoviiva UTC+2:n nollakohdan, ja harmaa katkoviiva kohdan, jonka länsipuolella UTC+1,5 on tarkempi, kuin UTC+2. Noin 80 % Suomen väestöstä asuu harmaan viivan länsipuolella.",
+            mapAltText: "Kartta Suomesta. Sininen katkoviiva kulkee 22,5°E pituuspiirin mukaisesti hieman Turun itäpuolella. Harmaa katkoviiva kulkee 26,25°E pituuspiirin mukaisesti Lahden ja Kouvolan välistä. Punainen katkoviiva kulkee 30°E pituuspiirin mukaisesti."
         },
 
         section4: {
             title: "Yhtenäinen EU, yhtenäinen aika",
             lead: "Fiksuinta olisi kuitenkin noudattaa samaa aikavyöhykettä, kuin valtaosa muistakin EU-maista. Suomen liittolaiset ja kauppakumppanit ovat lännessä, UTC+1–vyöhykkeellä.",
-            body1: "UTC+1 on tarkempi, kuin UTC+2 läntisimmissä osissa Suomea — UTC+1,5:n länsipuolella. Turusta itään päin mennessä se alkaa erkanemaan Auringon sijainnista UTC+2:a enemmän. Esimerkiksi Tampere on aikavyöhykkeissä mitattuna UTC+1,58 ja Helsinki UTC+1,66. Keski-Euroopan aikavyöhykkeessä on kuitenkin muita puolia, jotka kompensoivat miinusmerkkistä aikaeroa.",
+            body1: "UTC+1 on tarkempi, kuin UTC+2 läntisimmissä osissa Suomea — UTC+1,5:n länsipuolella. UTC+3:a tarkempi se on UTC+2:n länsipuolella, eli lähes koko maassa aivan itäisimpiä osia lukuunottamatta. Turusta itään päin mennessä se alkaa erkanemaan Auringon sijainnista UTC+2:a enemmän. Esimerkiksi Tampere on aikavyöhykkeissä mitattuna UTC+1,58 ja Helsinki UTC+1,66. Keski-Euroopan aikavyöhykkeessä on kuitenkin muita puolia, jotka kompensoivat miinusmerkkistä aikaeroa.",
             body2: "Muita EU-maita vastaavan ajan noudattaminen olisi Suomen etu, ja yhtenäinen aikavyöhyke olisi EU:lle kilpailuetu. Nykymallissa suomalaiset konttorit aukeavat ja sulkeutuvat tuntia keskieurooppalaisia vastineitaan aiemmin ja työntekijät lähtevät lounaalle eri aikaan, kuin eurooppalaiset kollegansa. Monikansallisessa talouselämässä tämä lisää päivittäiseen toimintaan turhaa kitkaa ja tekee työpäivien päällekkäisestä osasta kaksi tuntia lyhyemmän.",
             body3: "Nykypäivänä myös rajat ylittävät, etupäässä internetin kautta välittyvät ystävyyssuhteet ovat yleisiä. Aikaero nakertaa näihinkin käytettävästä ajasta käytännössä kaksi tuntia pois.",
             mapLegend: "Talvi (kesä)",
@@ -139,14 +139,14 @@ module.exports = {
             lead: "A half-hour time zone, UTC+1.5, would best correspond to Finland's geographical location. In this case, Finland would be half an hour ahead of Sweden.",
             body1: "The reference meridian for UTC+1.5 follows 22.5°E, passing slightly east of Turku. It is more accurate than UTC+2 for parts of Finland roughly west of Kouvola.",
             body2: "Half-hour time zones are unusual but not unheard of; they are observed in places like Canada, India, and Australia.",
-            body3: "On this map, the red dashed line shows the UTC+1.5 reference meridian, and the gray dashed line indicates the point west of which UTC+1.5 is more accurate than UTC+2. Approximately 80% of Finland's population lives west of the gray line.",
-            mapAltText: "A map of Finland. A red dashed line runs along the 22.5°E meridian slightly east of Turku. A gray dashed line runs along the 26.25°E meridian between Lahti and Kouvola.",
+            body3: "On this map, the blue dashed line shows the UTC+1.5 reference meridian, the red dashed line shows the UTC+2 reference meridian, and the gray dashed line indicates the point west of which UTC+1.5 is more accurate than UTC+2. Approximately 80% of Finland's population lives west of the gray line.",
+            mapAltText: "A map of Finland. A blue dashed line runs along the 22.5°E meridian slightly east of Turku. A gray dashed line runs along the 26.25°E meridian between Lahti and Kouvola. A red dashed line runs along the 30°E meridian.",
         },
 
         section4: {
             title: "Unified EU, unified time",
             lead: "However, the smartest move would be to follow the same time zone as the majority of other EU countries. Finland's allies and trading partners are to the west, in the UTC+1 zone.",
-            body1: "UTC+1 is more accurate than UTC+2 in the westernmost parts of Finland — west of UTC+1.5. Moving east from Turku, it begins to deviate from the Sun's position more than UTC+2. In terms of timezones, e.g. Tampere is UTC+1.58 and Helsinki is UTC+1.66. However, the Central European time zone has other aspects that compensate for the negative time offset.",
+            body1: "UTC+1 is more accurate than UTC+2 in the westernmost parts of Finland — west of UTC+1.5. It is more accurate than UTC+3 to the west of UTC+2, so across almost the entire country, save for the easternmost reaches. Moving east from Turku, it begins to deviate from the Sun's position more than UTC+2. In terms of timezones, e.g. Tampere is UTC+1.58 and Helsinki is UTC+1.66. However, the Central European time zone has other aspects that compensate for the negative time offset.",
             body2: "Following the same time as other EU countries would be in Finland's interest, and a unified time zone would be a competitive advantage for the EU. In the current model, Finnish offices open and close an hour earlier than their Central European counterparts, and employees go to lunch at different times than their European colleagues. In a multinational economy, this adds unnecessary friction to daily operations and makes the overlapping part of workdays two hours shorter.",
             body3: "Today, cross-border friendships — primarily conducted over the internet — are also common. The time difference effectively eats away two hours of time available for these relationships.",
             mapLegend: "Winter (Summer)",
@@ -237,14 +237,14 @@ module.exports = {
             lead: "En halvtimmes tidszon, UTC+1,5, skulle bäst motsvara Finlands geografiska läge. Då skulle Finland vara en halvtimme före Sverige.",
             body1: "Nollmeridianen för UTC+1,5 följer längdgraden 22,5°E, strax öster om Åbo. Den är mer exakt än UTC+2 för de delar av Finland som ligger väster om Kouvola.",
             body2: "Halvtimmes-tidszoner är ovanliga men inte okända; de används bland annat i Kanada, Indien och Australien.",
-            body3: "På kartan intill visar den röda streckade linjen nollmeridianen för UTC+1,5 och den grå streckade linjen den punkt väster om vilken UTC+1,5 är mer exakt än UTC+2. Cirka 80 % av Finlands befolkning bor väster om den grå linjen.",
-            mapAltText: "En karta över Finland. En röd streckad linje löper längs längdgraden 22,5°E strax öster om Åbo. En grå streckad linje löper längs längdgraden 26,25°E mellan Lahtis och Kouvola.",
+            body3: "På kartan intill visar den blå streckade linjen nollmeridianen för UTC+1,5, den röda streckade linjen nollmeridianen för UTC+2, och den grå streckade linjen den punkt väster om vilken UTC+1,5 är mer exakt än UTC+2. Cirka 80 % av Finlands befolkning bor väster om den grå linjen.",
+            mapAltText: "En karta över Finland. En blå streckad linje löper längs längdgraden 22,5°E strax öster om Åbo. En grå streckad linje löper längs längdgraden 26,25°E mellan Lahtis och Kouvola. En röd streckad linje löper längs längdgraden 30°E."
         },
 
         section4: {
             title: "Ett enhetligt EU, en enhetlig tid",
             lead: "Det smartaste vore ändå att följa samma tidszon som majoriteten av de andra EU-länderna. Finlands allierade och handelspartner finns i väst, i UTC+1-zonen.",
-            body1: "UTC+1 är mer exakt än UTC+2 i Finlands västligaste delar — väster om UTC+1,5. Öster om Åbo börjar den avvika mer från solens position än UTC+2. Till exempel motsvarar Tammerfors UTC+1,58 och Helsingfors UTC+1,66 mätt i tidszoner. Den centraleuropeiska tidszonen har dock andra fördelar som kompenserar för den negativa tidsskillnaden.",
+            body1: "UTC+1 är mer exakt än UTC+2 i Finlands västligaste delar — väster om UTC+1,5. Den är mer exakt än UTC+3 väster om UTC+2, det vill säga i nästan hela landet med undantag för de allra östligaste delarna. Öster om Åbo börjar den avvika mer från solens position än UTC+2. Mätt i tidszoner motsvarar till exempel Tammerfors UTC+1,58 och Helsingfors UTC+1,66. Den centraleuropeiska tidszonen har dock andra fördelar som kompenserar för den negativa tidsavvikelsen.",
             body2: "Att följa samma tid som andra EU-länder vore till Finlands fördel, och en enhetlig tidszon vore en konkurrensfördel för EU. I nuvarande modell öppnar och stänger finländska kontor en timme tidigare än sina centraleuropeiska motsvarigheter, och anställda går på lunch vid andra tider än sina europeiska kollegor. I en internationell ekonomi skapar detta onödig friktion och gör den överlappande delen av arbetsdagen två timmar kortare.",
             body3: "Idag är även gränsöverskridande vänskapsrelationer via internet vanliga. Tidsskillnaden äter i praktiken upp två timmar av den tid som finns tillgänglig för dessa relationer.",
             mapLegend: "Vinter (sommar)",
